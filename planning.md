@@ -4,10 +4,10 @@ Bristol'S Find a Crime
 ## Business Case
 
 ### Problem statement
- Citizens are often unaware of criminal activities in their neighborhoods and many individuals are unware of potential safety threats.
-  Without an easy way to access clear crime information, residents struggle to respond to and prevent crime effectively.
-   Additionally, people who intend to move to Bristol as they need to know more about their new neighbourhood before moving there.
-    A solution is needed to close this information gap and improve public safety. Thus, our webapp aims to show the crime rates in every neighbourhood around Bristol. 
+ Bristol citizens may be often unaware of criminal activities in their neighborhoods and many individuals are unware of potential safety threats.
+  Without an easy way to access clear crime information, residents struggle to respond to and prevent crime effectively. Most importantly, international students that come from various parts of the world to study in Bristol, they need to be more covenient about their new place as it will be their new home during their period of studying. They will need some source to review the crime history of the area which they are choosing.
+   Additionally, people who intend to move to Bristol. They need to know more about their new neighbourhood before moving there. 
+    A solution is needed to close this information gap and improve public safety. Thus, our webapp aims to show the crime rates in differnet neighbourhoods around Bristol. 
   
  
 ### Business benefits
@@ -26,10 +26,11 @@ Our objects are to:
 ### Options Considered
 TODO: What are some other customer options or leading products that address the same needs?
 
-Some apps like UK Police Crime Map, SpotCrime and CrimeReports have the same idea and provide the same servoices,
+Some apps like UK Police Crime Map, SpotCrime and CrimeReports have the same idea and provide the same services,
  but our app will be differnet as it focuses on Bristol's different neighbourhoods,
-  which would be specific for people live in Bristol or moving in Bristol or even international students studying in Bristol's universities.
-Morever, its aim is to display statistics for differnt neighbourhoods in Bristol in order to let the user know the percentage of crime risks for the area he searches for.
+  which would be specific for people live in Bristol or moving in Bristol or even international students studying in Bristol.
+Moreover, its aim is to display statistics for differnt neighbourhoods in Bristol in order to let the user know the percentage of crime risks for the area he searches for.
+The user will just need to search for the crime type, year, and the crime type such as theft or assault.
 
 
 ### Expected Risks
