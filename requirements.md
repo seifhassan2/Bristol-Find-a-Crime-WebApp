@@ -33,7 +33,8 @@ TODO: Describe each use case (at least one per team member).
 | -------------------------------------- | ------------------- |
 | **Description** | An international student trying to search for crime history in a specific neighborhood in Bristol to identify if it's safe to live live or not. |
 | **Actors** | International Student |
-| **Assumptions** | Pre-condition: Internet access available and basic knowledge of how to use a web application. Post-condition: The student identifies the neighborhood based on the provided crime data. |
+| **Assumptions** | </td> Pre-condition: Internet access available and basic knowledge of how to use a web application.
+                    Post-condition: The student identifies the neighborhood based on the provided crime data. </tr> |
 | **Steps** | 1- User Action: The international student navigates to the website's home page. 2- The system displays a search bar and an interactive map of Bristol. 3- The student enters the name of a neighborhood or clicks on a specific area on the map. 4- The system fetches and displays crime statistics (e.g., crime rate, most common crimes) for the selected area. 5- The student reviews the data to assess whether his chosen neighborhood is safe for residence or not. |
 | **Variations** | The student may choose to filter the results by a specific time range |
 | **Non-functional** | The system should load results in under 3 seconds. |
