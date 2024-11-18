@@ -67,11 +67,12 @@ TODO: create a list of functional requirements.
     e.g. "The system shall ..."
     Give each functional requirement a unique ID. e.g. FR1, FR2, ...
     Indicate which UC the requirement comes from.     
-    FR1 (Comes From UC101): The system must allow users to search for specific neighborhoods in Bristol by name or location on a map. (Search Functionality)
-    FR2 : The system must provide filters to narrow down data by time range (e.g., last month, last year) and type of crime (e.g., theft, assault).
-    FR3: The system should get the crimes data from Bristol data set used. 
-    FR4: The system won’t provide real-time updates on ongoing crimes due to resource limitations and data availability constraints.
-    FR5: The system won’t allow direct interaction with police systems or data submission due to legal and technical complexities.
+    
+FR1 (Comes From UC101): The system must allow users to search for specific neighborhoods in Bristol by name or location on a map. (Search Functionality)
+FR2 : The system must provide filters to narrow down data by time range (e.g., last month, last year) and type of crime (e.g., theft, assault).
+FR3: The system should get the crimes data from Bristol data set used. 
+FR4: The system won’t provide real-time updates on ongoing crimes due to resource limitations and data availability constraints.
+FR5: The system won’t allow direct interaction with police systems or data submission due to legal and technical complexities.
 
 
 
