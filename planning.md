@@ -41,7 +41,9 @@ TODO: What are some other customer options or leading products that address the 
 Several existing apps provide crime data and services similar to our proposed web app, including:
 
 1- UK Police Crime Map: This app offers crime data across the UK, focusing on police-reported incidents. However, it lacks the localized detail specific to Bristol neighborhoods.
+
 2- Spot Crime: Provides crime maps and alerts for various cities, allowing users to see recent crime reports. While useful, it does not offer the depth of data specific to Bristol.
+
 3- Crime Reports: Aggregates crime data from multiple sources and provides detailed crime maps and statistics. It covers a broad area and may not provide the focused insights needed for Bristol residents. 
 
 However, our app will be different as it mainly focuses on:
