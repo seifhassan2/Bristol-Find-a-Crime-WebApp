@@ -18,9 +18,7 @@ Bristol's Find a Crime
   
 ### Business benefits 
 
-TODO: List high-level benefits that this product will provide. 
-
-Our objects are to: 
+Our high-level benefits that our web app project will provide are to:
 
 (1) Enhance Public Safety and Crime Awareness: The web app provides various crime data with a user-friendly interface that displays understandable statistics for different types of crimes around various areas in Bristol. As well as reviewing the crime history of the neighbourhood chosen by the user across the years, enabling residents and newcomers to make informed decisions about their safety and take preventive measures. For instance: The app's heat maps and trend charts make it easy for users to identify high-risk areas and understand crime patterns over time.
 
@@ -40,9 +38,16 @@ Our objects are to:
 TODO: What are some other customer options or leading products that address the same needs? 
 
   
-Some apps like UK Police Crime Map, Spot Crime and Crime Reports have the same idea and provide the same services, but our app will be different as it mainly focuses on Bristol's different neighbourhoods, which would be specific for people living in Bristol, moving to Bristol or even international students studying in Bristol.  
-Moreover, its aim is to display statistics for different neighbourhoods in Bristol to let the user know the percentage of crime risks for the area he searches for.  
-The user will just need to search for the crime type, year, and the crime type such as theft or assault.  
+Some apps like UK Police Crime Map, Spot Crime and Crime Reports have the same idea and provide the same services, but our app will be different as it mainly focuses on:
+
+(1) Providing crimes information for Bristol's different neighbourhoods, which would be specific for residents in Bristol who live in high crime rate areas and intend to move to anothe safer area in Bristol, people moving to Bristol for the first time or even international students or UK Home students moving to Bristol for university study and looking for accommodation in a safe neighbourhood. All of these users will be provided the same benefits of the web app.
+
+(2) Displaying understandable statistics in a user-friendly interface, which will make it easier for our users to receive the crime information for the neighbourhood he searches for in a proper way and without any complexity. For instance: The user will just need to search for the crime type, year, and the crime type such as theft or assault and the app will provide him with all the information in an understandable form such as heat maps and trend charts, ensuring a personalized experience by customizable searches and better information understandability.
+
+(3) letting the user know the percentage of crime risks for the area he searches for and will give him a safety level for that area (For example: high-risk level area). Moreover, our app will make comparisons for the user between 2 different areas he has chosen to show which one is safer than the other. These are some unique feature that will help the user to make better decision for the area he will live in.
+
+(4) Encouraging community reporting as the user will have the option to report incidents and new crimes, fostering community engagement and providing more comprehensive data which allows us to update our dataset regularly.
+ 
 
  
 ### Expected Risks 
