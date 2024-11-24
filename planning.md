@@ -7,10 +7,13 @@ Bristol's Find a Crime
   
   ### Problem statement 
 
- Bristol citizens may be often unaware of criminal activities in their neighbourhoods, and many individuals are unaware of potential safety threats. Without an easy way to access clear crime information, residents struggle to respond to and prevent crime effectively. 
-Most importantly, international students that come from various parts of the world to study in Bristol need to be more convenient about their new place as it will be their new home during their period of studying. They will need some source to review the crime history of the area which they are choosing.  
-Additionally, people who intend to move to Bristol. They need to know more about their new neighbourhood before moving there. A solution is needed to close this information gap and improve public safety. 
-Thus, our webapp aims to show the crime rates in different neighbourhoods around Bristol.   
+ Residents around Bristol might be often unaware of criminal activities in their neighbourhoods, and many individuals, whether current residents or potential movers, are unaware of potential safety threats that they may face in their living areas or areas that they are going to move to. Without an easy accesible source to access clear crime information, residents will struggle to deal with crime dangers and achieving effective crime awareness.
+
+ International students coming to Bristol are most importantly to be focused on. They come from all over the world to complete their study journey in Bristol's universities. They need to be more convenient about their new chosen accommodation as it will be their new home during their period of study. As they are new to the place, they may face some problems in choosing their accommodation, because they don't know whether this place is safe and convenient for living or not. Thus, they will need some source of help to know the safety levels of Bristol's neighbourhoods by reviewing the crime history of the area which they are choosing.  
+ 
+ Additionally, current residents or even people who intend to move to Bristol can be in danger with their current or new living area. They need to know more information about their current or new neighbourhood. A solution is needed to close this information gap and improve public safety. 
+
+ Thus, our web app aims to enhance the crime awareness of Bristol's residents by showing the crime rates in different neighbourhoods around Bristol in various forms to ensure safety for thousands of people.  
 
   
 ### Business benefits 
