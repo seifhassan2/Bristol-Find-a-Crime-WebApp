@@ -61,17 +61,17 @@ However, our app will be different as it mainly focuses on:
 TODO: What are the main risks of this project? 
   
 
-1- Unreliable data might be used for the app and it will be perceived as unreliable itself. Meaning that the public will not have the reason nor the trust to use it. 
+(1) Unreliable data might be used for the app and it will be perceived as unreliable itself. Meaning that the public will not have the reason nor the trust to use it. 
 
-2- The level of attraction to the app will not be high enough and the app will fail a result. the lack of care or bugs will make it seem unattractive 
+(2) The level of attraction to the app will not be high enough and the app will fail a result. the lack of care or bugs will make it seem unattractive 
 
-3- The app being used will experience downtime. which means that the reductions in accuracy will be fed into the app.  
+(3) The app being used will experience downtime. which means that the reductions in accuracy will be fed into the app.  
 
-4- App with better technology could overtake the use of the app being used. the changes in technology would mean our app will need to be up to date. 
+(4) App with better technology could overtake the use of the app being used. the changes in technology would mean our app will need to be up to date. 
 
-5- The app’s data set we are using is from 2016-2023, which means that the user will not be able to view the crime history after that period. (Unless the data set is updated). 
+(5) The app’s data set we are using is from 2016-2023, which means that the user will not be able to view the crime history after that period. (Unless the data set is updated). 
 
-6- The features of this app may or may be available due to the experience of the developer's skill in the field. Additionally, the developer will not have financial means to develop the more advanced features. 
+(6) The features of this app may or may be available due to the experience of the developer's skill in the field. Additionally, the developer will not have financial means to develop the more advanced features. 
 
   
 
@@ -79,21 +79,38 @@ TODO: What are the main risks of this project?
 
 TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope. 
 
-The aim of the project is to make a chart or something similar regarding the trends of previous crimes in Bristol.  
-The aim is to show statistics from Bristol's from certain areas that will be coloured coded to show the severity of the crime. This will give people a chance to see what has happened in the last 7-8 years. 
-The main function of the website is to make it customizable with different options. Time, location and crime type will all serve a purpose with the map, and it gives it a chance for the stakeholders (theoretically police), students (especially international), and the people living there) will have the capacity to look at the crime with their own use. 
-More to add on if that past crimes will be seen with and statistics (without the numbers, the map is considered useless).  
+Main focus: Develop a web application, "Bristol's Find a Crime," to provide detailed and user-friendly crime data for various neighborhoods in Bristol, enhancing public safety and community engagement.
 
-  
-Elements from the context diagram. 
+Project Scope Elements:
 
-1- Stakeholders: Bristol's current residents, people moving to Bristol, International students looking for accommodation in Bristol. All of them might be involved 
+(1) Crime Data Visualization:
 
-2- Tech Used: HTML, CSS, and JS / Google Maps 
+Develop understandable statistics in form of charts and heat maps to display crime trends over the past 7-8 years.
+Use color coding to indicate the severity of crimes in different areas.
 
-3- Database used: Bristol open data 
+(2) Customizable Searches:
 
-4- Depends on maps and statistics 
+Implement search functionality allowing users to filter data by time, location, and crime type (e.g., theft, assault).
+Provide options for users to view crime statistics for specific years and types of crimes.
+
+(3) User Interface:
+
+Design a user-friendly interface that presents crime data in an easily understandable format.
+Ensure the interface supports various devices, including desktops, tablets, and smartphones.
+
+(4) Risk Assessment and Comparisons:
+
+Include features that show the percentage of crime risks and safety levels for different neighborhoods.
+Allow users to compare crime statistics between two or more areas to help them make informed decisions.
+
+(5) Community Reporting:
+
+Enable users to report incidents and new crimes through the app.
+Foster community engagement by allowing users to contribute to the crime data.
+
+(6) Scalability:
+
+Design the app with scalability in mind, allowing for future expansion to other cities or regions.
 
   
 
