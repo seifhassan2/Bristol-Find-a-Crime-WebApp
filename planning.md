@@ -38,7 +38,13 @@ Our high-level benefits that our web app project will provide are to:
 TODO: What are some other customer options or leading products that address the same needs? 
 
   
-Some apps like UK Police Crime Map, Spot Crime and Crime Reports have the same idea and provide the same services, but our app will be different as it mainly focuses on:
+Several existing apps provide crime data and services similar to our proposed web app, including:
+
+1- UK Police Crime Map: This app offers crime data across the UK, focusing on police-reported incidents. However, it lacks the localized detail specific to Bristol neighborhoods.
+2- Spot Crime: Provides crime maps and alerts for various cities, allowing users to see recent crime reports. While useful, it does not offer the depth of data specific to Bristol.
+3- Crime Reports: Aggregates crime data from multiple sources and provides detailed crime maps and statistics. It covers a broad area and may not provide the focused insights needed for Bristol residents. 
+
+However, our app will be different as it mainly focuses on:
 
 (1) Providing crimes information for Bristol's different neighbourhoods, which would be specific for residents in Bristol who live in high crime rate areas and intend to move to anothe safer area in Bristol, people moving to Bristol for the first time or even international students or UK Home students moving to Bristol for university study and looking for accommodation in a safe neighbourhood. All of these users will be provided the same benefits of the web app.
 
