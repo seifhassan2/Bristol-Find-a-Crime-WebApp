@@ -22,18 +22,17 @@ TODO: List high-level benefits that this product will provide.
 
 Our objects are to: 
 
-1- Provide crime data of different neighbourhoods around Bristol.  
+(1) Enhance Public Safety and Crime Awareness: The web app provides various crime data with a user-friendly interface that displays understandable statistics for different types of crimes around various areas in Bristol. As well as reviewing the crime history of the neighbourhood chosen by the user across the years, enabling residents and newcomers to make informed decisions about their safety and take preventive measures. For instance: The app's heat maps and trend charts make it easy for users to identify high-risk areas and understand crime patterns over time.
 
-2- Enhance safety awareness for those who live or going to live in high-rate crime areas. 
+(2) Community Engagement: Encouraging residents to report incidents and crimes they had experienced in their neighbourhoods. The app fosters a sense of community and collective responsibility for safety, as the user will have the option to report a crime and get involved in enhancing safety awareness. User reports are not only foster community involvement but also enhance the accuracy and timeliness of the crime data presented and to make our data source updated by the time.
 
-3- Encourage residents to report incidents and safety issues.
+(3) Informed Decision-Making: Potential movers and international students can use the app to choose safer neighborhoods, as the web app will allow them to review all the crime information of their chosen neighborhood, display to them the safety level for that neighbourhood, and make safety comparison between different neighbourhoods. Leading to wiser decision-making for the user, and eventually safer and better living experiences in Bristol. By providing comprehensive crime data, the app helps reduce the anxiety associated with moving to a new area, leading to a smoother transition.
 
-4- Establishing the app as a reliable sources of crime data which makes it trusted. 
+(4) Trust and Reliability: Establishing the app as a trusted source of crime data around Bristol builds credibility and will encourage regular use.
 
-5- The use of the app can help with scalability meaning that the app can go on to different markets or communities to help them with their needs.
+(5) Scalability: The web app's model can be expanded to other cities or regions, increasing its market reach and impact to all over te UK.
 
-6- The app will help with the social impact which will incentive communities to tackle down crime.
-
+(6) Social Impact: Raising awareness about crime contributes to social initiatives aimed at reducing crime rates. Our web app aims to reduce crime rates by 10% in high-risk areas through increased awareness and reporting.
   
 
 ### Options Considered 
