@@ -116,8 +116,4 @@ Design the app with scalability in mind, allowing for future expansion to other 
 
   
 
-! [Insert your Context Diagram Here](images/context.png) 
-
- 
-
- 
+![Context Diagram Here](images/Contextt.png)
