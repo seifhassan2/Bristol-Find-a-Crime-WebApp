@@ -8,9 +8,12 @@ TODO: Write brief user stories to explain how various actors would interact with
 
 - As an international student, I want to get to know more about Bristol’s different neighbourhoods' crime history. So that I can choose the safest place I should stay in during my studying period to avoid risks. I want to stay away from danger and feel like home during my residence in Bristol.
 
-- As a student from the UK, I want to know if the place I am living at is the safest place to live by knowing the history of the place. The place of study should not have distracted me or put me in danger during my time being there. I want something that will display the neighbourhood's past and in what area of Bristol I should avoid. This should benefit me by letting me use a tool for such a use. 
+- As a UK Home Student, I want to know if the place I am living at is the safest place to live by knowing the history of the place. The place of study should not have distracted me or put me in danger during my time being there. I want something that will display the neighbourhood's past and in what area of Bristol I should avoid. This should benefit me by letting me use a tool for such a use. 
 
 - As a new resident moving to Bristol for a new workplace, I want to search for the safest place to stay in Bristol. So that I can be in a convenient environment and go to my work safely.
+
+- As a resident, I want to report an incedent or a crime I have experienced in my neighbourhood, so that I can spread conscious and get engaged to spread crime awareness to my community.
+
 
 
 ### Actors
