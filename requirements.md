@@ -36,7 +36,7 @@ TODO: Describe each use case (at least one per team member).
 | -------------------------------------- | ------------------- |
 | **Description** | An international student trying to search for crime history in a specific neighborhood in Bristol to identify if it's safe to live live or not. |
 | **Actors** | International Student |
-| **Assumptions** | Pre-condition: Internet access available and basic knowledge of how to use a web application.                                                                                                           Post-condition: The student identifies the neighborhood based on the provided crime data. |
+| **Assumptions** | Pre-condition: Internet access available and basic knowledge of how to use a web application. <br> Post-condition: The student identifies the neighborhood based on the provided crime data. |
 | **Steps** | 1- User Action: The international student navigates to the website's home page. <br> 2- The system displays a search bar and an interactive map of Bristol. <br> 3- The student enters the name of a neighborhood or clicks on a specific area on the map. <br> 4- The system fetches and displays crime statistics (e.g., crime rate, most common crimes) for the selected area. <br> 5- The student reviews the data to assess whether his chosen neighborhood is safe for residence or not. |
 | **Variations** | The student may choose to filter the results by a specific time range |
 | **Non-functional** | The system should load results in under 3 seconds. |
@@ -54,7 +54,7 @@ TODO: Your Use-Case diagram should include all use-cases.
 | -------------------------------------- | ------------------- |
 | **Description** | A resident trying to report a crime he experienced in a certain neighbourhood in Bristol. We receive the information and add it to our database. So anyone can be aware of that  |
 | **Actors** | Current resident in Bristol |
-| **Assumptions** | Pre-condition: <br> Internet access available. <br> Report button available. post-condition: <br> The user clicks on the report button in order to add his report of a crime in the reports section. |
+| **Assumptions** | Pre-condition: <br> Internet access available. <br> Report button available. <br> post-condition: <br> The user clicks on the report button in order to add his report of a crime in the reports section. |
 | **Steps** | 1- The user opens the Web App leading him to the home page. <br> 2- User navigates to the report section by clicking "Report a crime" button in the page. <br> 3- User chooses between categories the crime area, crime type and crime year. <br> 4- User adds more details in the comment box below the categories options. |
 | **Variations** | Users can upload photos or videos as evidence. |
 | **Non-functional** | The system must ensure data security and user privacy. |
