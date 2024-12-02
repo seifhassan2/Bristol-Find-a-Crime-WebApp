@@ -61,7 +61,7 @@ TODO: Your Use-Case diagram should include all use-cases.
 | **Issues** | Verifying the authenticity of user reports. |
 
 
-![Insert your Use-Case Diagram Here](images/use-case.png)
+![Use-Case Diagram Here](UC102.png)
 
 
 ## Software Requirements Specification
