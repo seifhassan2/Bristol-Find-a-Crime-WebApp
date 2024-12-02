@@ -61,7 +61,7 @@ TODO: Your Use-Case diagram should include all use-cases.
 | **Issues** | Verifying the authenticity of user reports. |
 
 
-
+![Insert your Use-Case Diagram Here](images/use-case.png)
 
 
 ## Software Requirements Specification
@@ -71,7 +71,7 @@ e.g. "The system shall ..."
     Give each functional requirement a unique ID. e.g. FR1, FR2, ...
     Indicate which UC the requirement comes from.
     
-FR1: The system must allow users to search for specific neighborhoods in Bristol by name or location on a map. (Search Functionality) (UC101) <br> FR2: The system must provide filters to narrow down data by time range (e.g., last month, last year) and type of crime (e.g., theft, assault). <br> FR3: The system should get the crimes data from Bristol data set used. <br> FR4: The system won’t provide real-time updates on ongoing crimes due to resource limitations and data availability constraints. <br> FR5: The system won’t allow direct interaction with police systems or data submission due to legal and technical complexities. <br> FR6: The system must allow users to report incidents and new crimes. (UC102). <br> FR7: The system should update the crime data based on user reports. (UC102). <br>
+FR1: The system must allow users to search for specific neighborhoods in Bristol by name or location on a map. (Search Functionality) (UC101) <br> FR2: The system must provide filters to narrow down data by time range (e.g., last month, last year) and type of crime (e.g., theft, assault). <br> FR3: The system should get the crimes data from Bristol data set used. <br> FR4: The system won’t provide real-time updates on ongoing crimes due to resource limitations and data availability constraints. <br> FR5: The system won’t allow direct interaction with police systems or data submission due to legal and technical complexities. <br> FR6: The system must allow users to report incidents and new crimes. (UC102). <br> FR7: The system should update the crime data based on user reports. (UC102). <br> FR8: The system could ensure data accuracy and reliability. (UC102). <br> FR9: 
 
 
 
@@ -81,3 +81,14 @@ TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/IS
 Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
 Indicate which UC the requirement comes from.
+
+- NFR1: The system should load and display data within 3 seconds. (UC1)
+- NFR2: The system could handle up to 10,000 concurrent users without performance degradation. (UC1)
+- NFR3: The system could protect user data with encryption. (UC2)
+- NFR4: The system could comply with relevant data protection regulations. (UC2)
+- NFR5: The system must be intuitive and easy to use for all user types. (UC1, UC2)
+- NFR6: The system could provide help and support features for users. (UC1, UC2)
+- NFR7: The system should allow for easy integration of new data sources. (UC2)
+
+
+
