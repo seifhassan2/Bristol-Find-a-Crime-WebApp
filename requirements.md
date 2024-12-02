@@ -82,13 +82,13 @@ Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
 Indicate which UC the requirement comes from.
 
-- NFR1: The system should load and display data within 3 seconds. (UC1)
-- NFR2: The system could handle up to 10,000 concurrent users without performance degradation. (UC1)
-- NFR3: The system could protect user data with encryption. (UC2)
-- NFR4: The system could comply with relevant data protection regulations. (UC2)
-- NFR5: The system must be intuitive and easy to use for all user types. (UC1, UC2)
-- NFR6: The system could provide help and support features for users. (UC1, UC2)
-- NFR7: The system should allow for easy integration of new data sources. (UC2)
+- NFR1: The system should load and display data within 3 seconds. (UC1) Performance
+- NFR2: The system could handle up to 10,000 concurrent users without performance degradation. (UC1) Performance
+- NFR3: The system could protect user data with encryption. (UC2) Security
+- NFR4: The system could comply with relevant data protection regulations. (UC2) Security
+- NFR5: The system must be intuitive and easy to use for all user types. (UC1, UC2) Usability
+- NFR6: The system could provide help and support features for users. (UC1, UC2) Usability
+- NFR7: The system should allow for easy integration of new data sources. (UC2) Scalability
 
 
 
