@@ -37,7 +37,7 @@ TODO: Describe each use case (at least one per team member).
 | **Description** | An international student trying to search for crime history in a specific neighborhood in Bristol to identify if it's safe to live live or not. |
 | **Actors** | International Student |
 | **Assumptions** | Pre-condition: Internet access available and basic knowledge of how to use a web application.                                                                                                           Post-condition: The student identifies the neighborhood based on the provided crime data. |
-| **Steps** | 1- User Action: The international student navigates to the website's home page. <br> 2- The system displays a search bar and an interactive map of Bristol.                                                                                                                                                      3- The student enters the name of a neighborhood or clicks on a specific area on the map.                                                                                                                                   4- The system fetches and displays crime statistics (e.g., crime rate, most common crimes) for the selected area.                                                                                                           5- The student reviews the data to assess whether his chosen neighborhood is safe for residence or not. |
+| **Steps** | 1- User Action: The international student navigates to the website's home page. <br> 2- The system displays a search bar and an interactive map of Bristol. <br> 3- The student enters the name of a neighborhood or clicks on a specific area on the map. <br> 4- The system fetches and displays crime statistics (e.g., crime rate, most common crimes) for the selected area. <br> 5- The student reviews the data to assess whether his chosen neighborhood is safe for residence or not. |
 | **Variations** | The student may choose to filter the results by a specific time range |
 | **Non-functional** | The system should load results in under 3 seconds. |
 | **Issues** | The student may choose a time range that is out of our data set used. |
@@ -71,10 +71,10 @@ e.g. "The system shall ..."
     Give each functional requirement a unique ID. e.g. FR1, FR2, ...
     Indicate which UC the requirement comes from.
     
-FR1 (Comes From UC101): The system must allow users to search for specific neighborhoods in Bristol by name or location on a map. (Search Functionality)
-FR2 : The system must provide filters to narrow down data by time range (e.g., last month, last year) and type of crime (e.g., theft, assault).
-FR3: The system should get the crimes data from Bristol data set used. 
-FR4: The system won’t provide real-time updates on ongoing crimes due to resource limitations and data availability constraints.
+FR1 (Comes From UC101): The system must allow users to search for specific neighborhoods in Bristol by name or location on a map. (Search Functionality) <br>
+FR2: The system must provide filters to narrow down data by time range (e.g., last month, last year) and type of crime (e.g., theft, assault). <br>
+FR3: The system should get the crimes data from Bristol data set used. <br>
+FR4: The system won’t provide real-time updates on ongoing crimes due to resource limitations and data availability constraints. <br>
 FR5: The system won’t allow direct interaction with police systems or data submission due to legal and technical complexities.
 
 
