@@ -79,13 +79,7 @@ e.g. "The system shall ..."
     Give each functional requirement a unique ID. e.g. FR1, FR2, ...
     Indicate which UC the requirement comes from.
     
-FR1: The system must allow users to search for specific neighborhoods in Bristol by name or location on a map. (Search Functionality) (UC101) <br>
-FR2: The system must provide filters to narrow down data by time range (e.g., last month, last year) and type of crime (e.g., theft, assault). <br>
-FR3: The system should get the crimes data from Bristol data set used. <br>
-FR4: The system won’t provide real-time updates on ongoing crimes due to resource limitations and data availability constraints. <br>
-FR5: The system won’t allow direct interaction with police systems or data submission due to legal and technical complexities. <br> 
-FR6: The system must allow users to report incidents and new crimes. (UC102). <br> 
-FR7: The system should update the crime data based on user reports. (UC102). <br>
+FR1: The system must allow users to search for specific neighborhoods in Bristol by name or location on a map. (Search Functionality) (UC101) <br> FR2: The system must provide filters to narrow down data by time range (e.g., last month, last year) and type of crime (e.g., theft, assault). <br> FR3: The system should get the crimes data from Bristol data set used. <br> FR4: The system won’t provide real-time updates on ongoing crimes due to resource limitations and data availability constraints. <br> FR5: The system won’t allow direct interaction with police systems or data submission due to legal and technical complexities. <br> FR6: The system must allow users to report incidents and new crimes. (UC102). <br> FR7: The system should update the crime data based on user reports. (UC102). <br>
 
 
 
