@@ -9,18 +9,18 @@ Bristol's Find a Crime
 
  Residents around Bristol might be often unaware of criminal activities in their neighbourhoods, and many individuals, whether current residents or potential movers, are unaware of potential safety threats that they may face in their living areas or areas that they are going to move to. Without an easy accesible source to access clear crime information, residents will struggle to deal with crime dangers and achieving effective crime awareness.
 
- International students coming to Bristol are most importantly to be focused on. They come from all over the world to complete their study journey in Bristol's universities. They need to be more convenient about their new chosen accommodation as it will be their new home during their period of study. As they are new to the place, they may face some problems in choosing their accommodation, because they don't know whether this place is safe and convenient for living or not. Thus, they will need some source of help to know the safety levels of Bristol's neighbourhoods by reviewing the crime history of the area which they are choosing.  
+ International students coming to Bristol are most importantly to be focused on. They come from all over the world to complete their studies in the UK, and our focus is on Bristol's students. They need to be more convenient about their new chosen accommodation as it will be their new home during their period of study. As they are new to the place, they may face some problems in choosing their accommodation, because they don't know whether this place is safe and convenient for living or not. Thus, they will need some source of help to know the safety levels of Bristol's neighbourhoods by reviewing the crime history of the area which they are choosing.  
  
- Additionally, current residents or even people who intend to move to Bristol can be in danger with their current or new living area. They need to know more information about their current or new neighbourhood. A solution is needed to close this information gap and improve public safety. 
-
- Thus, our web app aims to enhance the crime awareness of Bristol's residents by showing the crime rates in different neighbourhoods around Bristol in various forms to ensure safety for thousands of people.  
+ Additionally, current residents or even people who intend to move to Bristol can be in danger with their current or new living area. They need to know more information about their current or new neighbourhood.
+ 
+Hence, a solution is needed to close this information gap and improve public safety. Our web app aims to enhance the crime awareness of Bristol's residents by showing the crime rates in different neighbourhoods around Bristol in various forms to ensure safety for thousands of people.  
 
   
 ### Business benefits 
 
 Our high-level benefits that our web app project will provide are to:
 
-(1) Enhance Public Safety and Crime Awareness: The web app provides various crime data with a user-friendly interface that displays understandable statistics for different types of crimes around various areas in Bristol. As well as reviewing the crime history of the neighbourhood chosen by the user across the years, enabling residents and newcomers to make informed decisions about their safety and take preventive measures. For instance: The app's heat maps and trend charts make it easy for users to identify high-risk areas and understand crime patterns over time.
+(1) Enhance Public Safety and Crime Awareness: The web app provides various crime data with a user-friendly interface that displays understandable statistics for different types of crimes around various areas in Bristol, as well as reviewing the crime history of the neighbourhood chosen by the user across the years, enabling residents and newcomers to make informed decisions about their safety and take preventive measures. For instance: The app's heat maps and trend charts make it easy for users to identify high-risk areas and understand crime patterns over time.
 
 (2) Community Engagement: Encouraging residents to report incidents and crimes they had experienced in their neighbourhoods. The app fosters a sense of community and collective responsibility for safety, as the user will have the option to report a crime and get involved in enhancing safety awareness. User reports are not only foster community involvement but also enhance the accuracy and timeliness of the crime data presented and to make our data source updated by the time.
 
@@ -65,7 +65,7 @@ TODO: What are the main risks of this project?
 
 (1) Unreliable data might be used for the app and it will be perceived as unreliable itself. Meaning that the public will not have the reason nor the trust to use it. 
 
-(2) The level of attraction to the app will not be high enough and the app will fail a result. the lack of care or bugs will make it seem unattractive 
+(2) The level of attraction to the app will not be high enough. the lack of care or bugs will make it seem unattractive 
 
 (3) The app being used will experience downtime. which means that the reductions in accuracy will be fed into the app.  
 
@@ -73,7 +73,7 @@ TODO: What are the main risks of this project?
 
 (5) The app’s data set we are using is from 2016-2023, which means that the user will not be able to view the crime history after that period. (Unless the data set is updated). 
 
-(6) The features of this app may or may be available due to the experience of the developer's skill in the field. Additionally, the developer will not have financial means to develop the more advanced features. 
+(6) The features of this app may or may not be available due to the experience of the developer's skill in the field. Additionally, the developer will not have financial means to develop the more advanced features. 
 
   
 
