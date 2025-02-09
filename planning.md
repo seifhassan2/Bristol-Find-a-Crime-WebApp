@@ -92,7 +92,7 @@ Use color coding to indicate the severity of crimes in different areas.
 
 (2) Customizable Searches:
 
-Implement search functionality allowing users to filter data by time, location, and crime type (e.g., theft, assault).
+Implement search functionality allowing users to filter data by time (year), location, and crime type (e.g., theft, assault).
 Provide options for users to view crime statistics for specific years and types of crimes.
 
 (3) User Interface:
