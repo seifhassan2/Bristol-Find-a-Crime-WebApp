@@ -14,6 +14,8 @@ TODO: Write brief user stories to explain how various actors would interact with
 
 - As a resident, I want to report an incedent or a crime I have experienced in my neighbourhood, so that I can spread conscious and get engaged to spread crime awareness to my community.
 
+- As a researcher, I want a reliable website that provides statistical data for Bristol's neighbourhoods' crimes history, so that I can benefit from it in my research about crimes in Bristol.  
+
 
 
 ### Actors
@@ -23,7 +25,7 @@ TODO: List and describe the actors/users for this product.
 -	Second, third year students and postgraduates: they will not be in the university halls so they will need a place to stay. This tool will be helpful for safety reasons.
 -	New residents (families or individuals): As they are moving to a new different city (Bristol), they need to seek the safest places to live in.
 -	Neighbours: Neighbours are given the chance to show the different types of crimes that can be shown, can be reported. 
--	Anyone: this is a tool to show data, anyone can go on the website out of curiosity. Researchers can be involved on the website for their studies.
+-	Researchers and Criminology enthusiasts: this is a tool to show data, anyone can go on the website out of curiosity. Researchers can be involved on the website for their studies.
 -	(Theoretically) police: they can see what areas will need to be worked on to make these areas safer.
 
 
