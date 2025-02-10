@@ -36,7 +36,7 @@ TODO: Describe each use case (at least one per team member).
 
 | USE-CASE ID: UC101 (By: Seif Hassan)| USE-CASE NAME: Search Safe Neighborhood | 
 | -------------------------------------- | ------------------- |
-| **Description** | A student trying to search for crime history in a specific neighborhood in Bristol to identify if it's safe to live live or not. |
+| **Description** | A student trying to search for crime history in a specific neighborhood in Bristol to identify if it is safe to live in or not. |
 | **Actors** | International/UK Home Student |
 | **Assumptions** | Pre-condition: Internet access available and basic knowledge of how to use a web application. <br> Post-condition: The student identifies the neighborhood based on the provided crime data. |
 | **Steps** | 1- User Action: The international student navigates to the website's home page. <br> 2- The system displays a search bar and an interactive map of Bristol. <br> 3- The student enters the name of a neighborhood or clicks on a specific area on the map. <br> 4- The system fetches and displays crime statistics (e.g., crime rate, most common crimes) for the selected area. <br> 5- The student reviews the data to assess whether his chosen neighborhood is safe for residence or not. |
