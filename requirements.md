@@ -34,15 +34,16 @@ TODO: Describe each use case (at least one per team member).
     Give each use case a unique ID, e.g. UC1, UC2, ...
     Summarise these using the use-case template below.
 
-| USE-CASE ID: UC101 (By: Seif Hassan)| USE-CASE NAME: Search Safe Neighborhood | 
+| USE-CASE ID: UC1 (By: Seif Hassan)| USE-CASE NAME: Find a Crime | 
 | -------------------------------------- | ------------------- |
-| **Description** | A student trying to search for crime history in a specific neighborhood in Bristol to identify if it is safe to live in or not. |
+| **Description** | A student trying to search for the crime history of the area that he intends to move to in Bristol during his university studies 
 | **Actors** | International/UK Home Student |
 | **Assumptions** | Pre-condition: Internet access available and basic knowledge of how to use a web application. <br> Post-condition: The student identifies the neighborhood based on the provided crime data. |
-| **Steps** | 1- User Action: The international student navigates to the website's home page. <br> 2- The system displays a search bar and an interactive map of Bristol. <br> 3- The student enters the name of a neighborhood or clicks on a specific area on the map. <br> 4- The system fetches and displays crime statistics (e.g., crime rate, most common crimes) for the selected area. <br> 5- The student reviews the data to assess whether his chosen neighborhood is safe for residence or not. |
+| **Steps** | 1- User Action: The student navigates to the website's home page. <br> 2- The student presses the Find a Crime button 3- The system displays a search bar and an interactive map of Bristol. <br> 4- The student enters the name of a neighborhood or clicks on a specific area on the map. <br> 5- The system displays the crimes that happened in the chosen area <br> 6- The student reviews the data to assess whether his chosen neighborhood is safe for residence or not. |
 | **Variations** | The student may choose to filter the results by a specific time range |
 | **Non-functional** | The system should load results in under 3 seconds. |
-| **Issues** | The student may choose a time range that is out of our data set used. |
+| **Issues** | The student may choose a location that is out of our data set used. |
+
 
 
 TODO: Your Use-Case diagram should include all use-cases.
