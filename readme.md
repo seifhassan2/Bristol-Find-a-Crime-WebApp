@@ -1,6 +1,4 @@
-# TODO: Bristol's Find a Crime
-
-TODO: Brief outline of your project describing the dataset and a link to it.
+# Bristol's Find a Crime
 
 1. [Planning](planning.md)
 2. [Requirements](requirements.md)
