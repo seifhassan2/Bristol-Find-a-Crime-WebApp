@@ -1,34 +1,153 @@
+<!-- By Seif Hassan -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find a Crime</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mapstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>  <!-- Load Leaflet at the top -->
 </head>
+
 <body>
 
     <header> 
-
         <h1>Bristol's Find a Crime</h1>
-        <p>Explore the history of crimes in Bristol's neighborhoods.</p>
-        <a href="index.html" class="home-button">Home</a>     <!-- Home Button -->
-    
+        <p>Explore the history of crimes in Bristol's neighbourhoods.</p>
+        <a href="index.html" class="home-button">Home</a>
     </header>
 
     <main>
-        Find a Crime
-    </main>
 
+        <section>
+            <h2>Find a Crime</h2>
+            <!-- Search Bar -->
+            <input type="text" id="search-input" placeholder="Search by street name or crime type">
+            <button id="search-button">Search</button>
+        </section>
+
+        <section class="map-section">
+            <div id="map-container">
+                <div id="crime-map" style="height: 500px;"></div> <!-- Map Container -->
+            </div>
+        </section>
+
+        <section class="results-section">
+            <h2>Crime Details</h2>
+            <div id="crime-results"></div> <!-- Crime Data List -->
+            <div id="crime-list"></div> <!-- Crime List -->
+        </section>
+
+        
+    </main>
 
     <footer>
         <p>&copy; 2025 Bristol's Find a Crime. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="about.html">About</a> <!--Link to the About Page-->
-                <span class="separator">|</span> <!-- Separator -->
-                <a href="contact.html">Contact Us</a>
-            </div>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <span class="separator">|</span>
+            <a href="contact.html">Contact Us</a>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const API_URL = "https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_community_and_safety/MapServer/24/query?where=1%3D1&outFields=MONTH,CRIME_CATEGORY,LONGITUDE,LATITUDE,STREET_NAME&outSR=4326&f=json";
+            let crimeData = [];
     
+            // Initialize the Map (Set to Bristol's Coordinates)
+            var map = L.map('crime-map').setView([51.4545, -2.5879], 13);
+    
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+    
+            // Fetch Crime Data (But Don't Display it Automatically)
+            async function fetchCrimeData() {
+                try {
+                    const response = await fetch(API_URL);
+                    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+    
+                    const data = await response.json();
+                    crimeData = data.features;
+                    // Do NOT display crime data here (Just store it)
+                } catch (error) {
+                    console.error("Error fetching crime data:", error);
+                }
+            }
+    
+            // Display Crime Data as List (Only When Search is Triggered)
+            function displayCrimeData(data) {
+                const crimeList = document.getElementById("crime-list");
+                crimeList.innerHTML = ""; // Clear previous results
+    
+                if (data.length === 0) {
+                    crimeList.innerHTML = "<p>No crimes found.</p>";
+                    return;
+                }
+    
+                data.forEach(crime => {
+                    const { MONTH, CRIME_CATEGORY, LONGITUDE, LATITUDE, STREET_NAME } = crime.attributes;
+    
+                    const crimeItem = document.createElement("div");
+                    crimeItem.classList.add("crime-item");
+                    crimeItem.innerHTML = `
+                        <p><strong>Crime:</strong> ${CRIME_CATEGORY}</p>
+                        <p><strong>Street:</strong> ${STREET_NAME}</p>
+                        <p><strong>Month:</strong> ${MONTH}</p>
+                        <p><strong>Location:</strong> (${LATITUDE}, ${LONGITUDE})</p>
+                        <hr>
+                    `;
+    
+                    crimeList.appendChild(crimeItem);
+                });
+            }
+    
+            // Filter Crime Data based on Search
+            function filterCrimeData() {
+                const searchInput = document.getElementById("search-input").value.toLowerCase();
+                const filteredData = crimeData.filter(crime => {
+                    const street = crime.attributes.STREET_NAME.toLowerCase();
+                    const crimeType = crime.attributes.CRIME_CATEGORY.toLowerCase();
+                    return street.includes(searchInput) || crimeType.includes(searchInput);
+                });
+    
+                displayCrimeData(filteredData);
+                plotCrimeOnMap(filteredData); // Update map markers
+            }
+    
+            // Attach Event Listener to Search Button
+            document.getElementById("search-button").addEventListener("click", filterCrimeData);
+    
+            // Function to Plot Crimes on the Map (Only on Search)
+            function plotCrimeOnMap(data) {
+                map.eachLayer(layer => {  // Remove existing markers before adding new ones
+                    if (layer instanceof L.Marker) {
+                        map.removeLayer(layer);
+                    }
+                });
+    
+                data.forEach(crime => {
+                    let lat = crime.attributes.LATITUDE;
+                    let lon = crime.attributes.LONGITUDE;
+                    let crimeType = crime.attributes.CRIME_CATEGORY;
+                    let street = crime.attributes.STREET_NAME;
+    
+                    if (lat && lon) {
+                        L.marker([lat, lon]).addTo(map)
+                            .bindPopup(`<strong>Crime:</strong> ${crimeType}<br><strong>Street:</strong> ${street}`);
+                    }
+                });
+            }
+    
+            fetchCrimeData(); // Fetch Data but DO NOT Display it until Search is Triggered
+        });
+    </script>
+    
+
 </body>
 </html>
