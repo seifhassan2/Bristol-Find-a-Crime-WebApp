@@ -7,6 +7,19 @@ TODO: Describe the system implemented (Describe the dataset. Are there any known
 TODO: Provide an outline of the project folder structure and the role of each file within it.
 provide a table listing the number of jslint warnings/reports for each module.
 
+```
+└── 📁ISD Project (Bristol's Find a Crime)
+    └── 📁.vscode
+    └── about.html
+    └── contact.html
+    └── crime data.html
+    └── index.html
+    └── mapstyle.css
+    └── report.html
+    └── statistics.html
+    └── styles.css
+```
+
 ## Software Architecture
 TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
 
