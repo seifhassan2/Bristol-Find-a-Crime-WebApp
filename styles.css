@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #2a376c, #2a376c);
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 0;
+}
+
+/* Home Button (Top Right) */
+.home-button {
+    position: absolute;
+    top: 32px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #2a376c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #777;
+}
+
+/* Main Content */
+
+main {
+
+    padding: 170px;
+    text-align: center;
+}
+
+.main-home {
+    padding: 215px;
+    text-align: center;
+}
+
+.main-about{
+    padding: 200px;
+    text-align: center;
+}
+
+/* Crime Data Buttons in home (index) page */
+.crime-data-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 15px 25px;
+    background-color: #1d3a59;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.crime-data-button:hover {
+    background-color: #0056b3;
+}
+
+/* About Page Content */
+.about-content {
+    max-width: 800px;
+    margin:auto;
+    margin-top: 10px;
+    text-align: left;
+    padding: 55px;
+    background: white;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(26, 24, 84, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2a376c;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    bottom: 0;
+}
+
+/* Footer */
+footer {
+    background: #2a376c;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.separator {
+    color: #fff;
+    margin: 0 5px;
+}
+
+
+.crime-data-button:focus,
+.home-button:focus,
+.footer-links a:focus {
+    outline: 3px solid #7e7b99; /* Visible focus indicator */
+    outline-offset: 4px;
+}
