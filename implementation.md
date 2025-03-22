@@ -35,7 +35,11 @@ TODO: Repeat as necessary
 # User guide
 TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
 
-Screenshot 1: home page
-(s1.png)
+![Screenshot 1 (Home Page)](s1.png)
 
-Screenshot 2: Find a Crime
+![Screenshot 2 (Find a Crime Page)](s2.png)
+
+![Screenshot 3 (Find a Crime Page)](s3.png)
+
+![Screenshot 4  ](s4.png)
+
