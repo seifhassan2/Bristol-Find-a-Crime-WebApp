@@ -29,6 +29,7 @@ TODO: Describe the major components of your architecture. Are any particular arc
 TODO: Document each query to Bristol Open Data
 
 ![UML Class diagrams representing JSON query results](CD.png)
+
 TODO: Repeat as necessary
 
 # User guide
