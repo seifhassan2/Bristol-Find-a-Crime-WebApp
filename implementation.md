@@ -1,4 +1,4 @@
-# Implementation
+    # Implementation
 
 ## Introduction
 TODO: Describe the system implemented (Describe the dataset. Are there any known issues? Describe any configuration data).
@@ -60,7 +60,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 ![Screenshot 5 (Crime Details)](s5.png)
 
-![Screenshot 6 (Crime Details)](s6.png)
+![Screenshot 6 (Crime Details)]()
 
 ![Screenshot 7 (Crime Details)](s7.png)
 
