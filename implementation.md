@@ -57,20 +57,35 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
  In these screenshots, I am explaining the use of "Find a Crime" page, which is a use-case page by me, Seif Hassan, explaining in each step how the user can benefit from this page to get the crime information that he wants and to display it either on a map or in an information box. This provides the user different forms of information so that he can get the best benefit from this page.
 
 
-Screenhot 1: In this screenshot, 
+Screenshot 1: 
+
 ![Screenshot 1 (Home Page)](s1.png)
+
+Screenshot 2:
 
 ![Screenshot 2 (Find a Crime Page)](s2.png)
 
+Screenshot 3:
+
 ![Screenshot 3 (Search and Displaying Data)](s3.png)
+
+Screenshot 4:
 
 ![Screenshot 4 (Crime Details)](s4.png)
 
+Screenshot 5:
+
 ![Screenshot 5 (Crime Details)](s5.png)
+
+Screenshot 6:
 
 ![Screenshot 6 (Crime Details)](s6.png)
 
+Screenshot 7:
+
 ![Screenshot 7 (Crime Details)](s7.png)
+
+Screenshot 8:
 
 ![Screenshot 8 (Crime Details)](s8.png)
 
