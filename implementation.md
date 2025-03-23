@@ -95,9 +95,6 @@ Screenshot 6: The following screenshots (6 & 7) show the same thing as previous 
 
 ![Screenshot 6 (Crime Details)](s6.png)
 
-#
-
-
 Screenshot 7:
 
 ![Screenshot 7 (Crime Details)](s8.png)
