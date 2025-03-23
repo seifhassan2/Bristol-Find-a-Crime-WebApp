@@ -56,6 +56,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
  In these screenshots, I am explaining the use of "Find a Crime" page, which is a use-case page by me, Seif Hassan, explaining in each step how the user can benefit from this page to get the crime information that he wants and to display it either on a map or in an information box. This provides the user different forms of information so that he can get the best benefit from this page. The screenshots below shows how the user can use the crime search use-case step-by-step.
 
+#
 
 Screenshot 1: This screenshot shows the first page that the user shall navigate, which the home (index) page. This page the 3 options which are our main features. For my use-case (the first use-case), if the user wanted to search for a crime and see it on the map or know some details about it like location, date, and type, they should press the "Find a Crime" button, which will take them to the crime search page (crime data.html), which is my use-case.
 
