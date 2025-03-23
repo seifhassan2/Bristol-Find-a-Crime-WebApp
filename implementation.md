@@ -3,6 +3,12 @@
 ## Introduction
 TODO: Describe the system implemented (Describe the dataset. Are there any known issues? Describe any configuration data).
 
+Bristol’s Find a Crime is a web application designed to provide users with crime data in Bristol's neighbourhoods. The system retrieves crime incident data from the Open Data Bristol API (Street crime incidents dataset) and visualizes it using interactive maps powered by Leaflet.js. Users can search for crime history in specific neighborhoods and filter results by crime type.
+
+The dataset used comes from Open Data Bristol, which provides structured information on reported street crimes. The data has some potential limitations include occasional delays in updates, missing location details, or inconsistencies in categorization. Additionally, one of the main issues that the crime dates in the data set in the period of January 2025 only. 
+
+The system requires API access to fetch crime data and a working internet connection for full functionality. Future improvements may include integrating additional data sources, enhancing filtering options, adding more dates and optimizing performance for large datasets.
+
 ## Project Structure
 TODO: Provide an outline of the project folder structure and the role of each file within it.
 provide a table listing the number of jslint warnings/reports for each module.
@@ -50,6 +56,8 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
  In these screenshots, I am explaining the use of "Find a Crime" page, which is a use-case page by me, Seif Hassan, explaining in each step how the user can benefit from this page to get the crime information that he wants and to display it either on a map or in an information box. This provides the user different forms of information so that he can get the best benefit from this page.
 
+
+Screenhot 1: In this screenshot, 
 ![Screenshot 1 (Home Page)](s1.png)
 
 ![Screenshot 2 (Find a Crime Page)](s2.png)
