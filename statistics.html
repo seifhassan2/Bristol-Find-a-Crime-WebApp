@@ -1,34 +1,146 @@
+<!--Tyler-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criminal Statistics</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-    <header> 
+<body>
+    <script>
+        function fetchData() {
+
+            const url = "https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_community_and_safety/MapServer/24/query?where=1%3D1&outFields=MONTH,LOCATION_TYPE,STREET_NAME,CRIME_CATEGORY&outSR=4326&f=json"
+
+            return fetch(url)
+                .then(response => response.json())
+                .then(data => {
+
+                    const tableBody = document.querySelector('#crimeTable tbody');
+                    tableBody.innerHTML = '';
+                    const crimes = data.features;
+
+                    crimes.forEach(crime => {
+                        const row = document.createElement("tr");
+                        row.innerHTML = `
+                    <td>${crime.attributes.MONTH}</td> 
+                    <td>${crime.attributes.CRIME_CATEGORY}</td>
+                    <td>${crime.attributes.STREET_NAME}</td>
+                    <td>${crime.attributes.LOCATION_TYPE}</td>    
+                `;
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => {
+                    console.error("There is been an error fetching the data", error);
+                    alert("Error fetching data from the API");
+                })
+
+        }
+
+        window.onload = fetchData;
+
+        let isDescending = false;
+
+        function sortTable(columnIndex) {
+            isDescending = !isDescending;
+            const table = document.getElementById("crimeTable");
+            const rows = Array.from(table.querySelectorAll("tbody tr"));
+
+            const compare = (a, b) => {
+                const cellA = a.cells[columnIndex].innerText;
+                const cellB = b.cells[columnIndex].innerText;
+
+                const aValue = isNaN(cellA) ? cellA.toLowerCase() : parseFloat(cellA);
+                const bValue = isNaN(cellB) ? cellB.toLowerCase() : parseFloat(cellB);
+
+                return isDescending ? bvalue - aValue : aValue - bValue;
+
+            };
+
+
+            rows.sort(compare);
+
+            const tbody = table.querySelector("tbody")
+            tbody.innerHTML = '';
+            tbody.append(...rows);
+
+        };
+
+        table.dataset.sortDesc = !isDescending;
+
+        window.onload = () => {
+            fetchData().then(setupSorting);
+        };
+
+        function setupSorting() {
+
+            const headers = document.querySelectorAll("#crimeTable th");
+            headers.forEach((header, index) => {
+                header.addEventListener('click', () => sortTable(index));
+
+            });
+        }
+
+        document.getElementById("searchFilter").addEventListener('input', function () {
+            const filterValue = this.value.toLowerCase();
+            const rows = document.querySelectorAll("#crimeTable tbody tr");
+
+
+
+            rows.forEach(row => {
+                const crimeCategory = row.cells[1].innerText.toLowerCase();
+
+                if (crimeCategory.includes(filterValue)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+
+    </script>
+
+    <header>
 
         <h1>Bristol's Find a Crime</h1>
         <p>Explore the history of crimes in Bristol's neighbourhoods.</p>
-        <a href="index.html" class="home-button">Home</a>     <!-- Home Button -->
-    
+        <a href="index.html" class="home-button">Home</a> <!-- Home Button -->
+
     </header>
 
     <main>
         Preview Criminal Statistics
+        <table id="crimeTable">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Crime Category</th>
+                    <th>Street Name</th>
+                    <th>Location Type</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
     </main>
 
 
     <footer>
         <p>&copy; 2025 Bristol's Find a Crime. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="about.html">About</a> <!--Link to the About Page-->
-                <span class="separator">|</span> <!-- Separator -->
-                <a href="contact.html">Contact Us</a>
-            </div>
+        <div class="footer-links">
+            <a href="about.html">About</a> <!--Link to the About Page-->
+            <span class="separator">|</span> <!-- Separator -->
+            <a href="contact.html">Contact Us</a>
+        </div>
+
     </footer>
-    
+
 </body>
+
 </html>
