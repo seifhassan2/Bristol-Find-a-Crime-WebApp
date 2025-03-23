@@ -54,18 +54,18 @@ The class diagram represents the structure of the JSON response retrieved from t
 # User guide
 TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
 
- In these screenshots, I am explaining the use of "Find a Crime" page, which is a use-case page by me, Seif Hassan, explaining in each step how the user can benefit from this page to get the crime information that he wants and to display it either on a map or in an information box. This provides the user different forms of information so that he can get the best benefit from this page.
+ In these screenshots, I am explaining the use of "Find a Crime" page, which is a use-case page by me, Seif Hassan, explaining in each step how the user can benefit from this page to get the crime information that he wants and to display it either on a map or in an information box. This provides the user different forms of information so that he can get the best benefit from this page. The screenshots below shows how the user can use the crime search use-case step-by-step.
 
 
-Screenshot 1: 
+Screenshot 1: This screenshot shows the first page that the user shall navigate, which the home (index) page. This page the 3 options which are our main features. For my use-case (the first use-case), if the user wanted to search for a crime and see it on the map or know some details about it like location, date, and type, they should press the "Find a Crime" button, which will take them to the crime search page (crime data.html), which is my use-case.
 
 ![Screenshot 1 (Home Page)](s1.png)
 
-Screenshot 2:
+Screenshot 2: This screenshot shows the crime search "Find a Crime" page, which is mainly my use-case. This page shows for the user a search bar for crime search. They can search with street/neighbourhood name and it will display for him all the crime data that happened in this area on the map and the information box below the map. They can also search with the crime type and it will display for them all the areas where this crime type happened in. 
 
 ![Screenshot 2 (Find a Crime Page)](s2.png)
 
-Screenshot 3:
+Screenshot 3: This screenshot is an example of using the search functionality for searching with street/neighbourhood name. As you can see, I used "Clifton" as an example of a neighbourhood. Then I pressed the "Search" button.
 
 ![Screenshot 3 (Search and Displaying Data)](s3.png)
 
