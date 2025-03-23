@@ -91,7 +91,7 @@ Screenshot 5: This screenshot shows what else the user can receive when searchin
 
 #
 
-Screenshot 6:
+Screenshot 6: The following screenshots (6 & 7) show the same thing as previous ones but with trying the search functionality on searching with crime type. I used "Burglary" as an example of a crime type and it started showing all the areas with this crime type on the map and information in the crime details box below the map as well.
 
 ![Screenshot 6 (Crime Details)](s6.png)
 
