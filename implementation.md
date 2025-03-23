@@ -65,33 +65,49 @@ Screenshot 1: This screenshot shows the first page that the user shall navigate,
 
 ![Screenshot 1 (Home Page)](s1.png)
 
+#
+
 Screenshot 2: This screenshot shows the crime search "Find a Crime" page, which is mainly my use-case. This page shows for the user a search bar for crime search. They can search with street/neighbourhood name and it will display for him all the crime data that happened in this area on the map and the information box below the map. They can also search with the crime type and it will display for them all the areas where this crime type happened in. 
 
 ![Screenshot 2 (Find a Crime Page)](s2.png)
+
+#
 
 Screenshot 3: This screenshot is an example of using the search functionality for searching with street/neighbourhood name. As you can see, I used "Clifton" as an example of a neighbourhood. Then I pressed the "Search" button.
 
 ![Screenshot 3 (Search and Displaying Data)](s3.png)
 
+#
+
 Screenshot 4: In this screenshot, I continue showing the search functionality for searching with street/neighbourhood name. I entered "Clifton" as a specific area for crime search. As you can see, there are pins on the map which shows every are that has "Clifton" keyword on it. The user can move with the mouse on any pin and it will automatically display for him the crime and the neighbouthood name. For this example, the crime is a vehicle crime near Clifton Hill and shows the exact location of this area. 
 
 ![Screenshot 4 (Crime Details)](s4.png)
 
-Screenshot 5:
+#
+
+Screenshot 5: This screenshot shows what else the user can receive when searching for a Crime. If the user scrolls down below the map, he will be able to see some further information about the crime in the "Crime Details" box as shown. 
 
 ![Screenshot 5 (Crime Details)](s5.png)
+
+#
 
 Screenshot 6:
 
 ![Screenshot 6 (Crime Details)](s6.png)
 
+#
+
 Screenshot 7:
 
 ![Screenshot 7 (Crime Details)](s7.png)
 
+#
+
 Screenshot 8:
 
 ![Screenshot 8 (Crime Details)](s8.png)
+
+#
 
 
 
