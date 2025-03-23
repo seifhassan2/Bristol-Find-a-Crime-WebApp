@@ -97,15 +97,10 @@ Screenshot 6:
 
 #
 
+
 Screenshot 7:
 
-![Screenshot 7 (Crime Details)](s7.png)
-
-#
-
-Screenshot 8:
-
-![Screenshot 8 (Crime Details)](s8.png)
+![Screenshot 7 (Crime Details)](s8.png)
 
 #
 
