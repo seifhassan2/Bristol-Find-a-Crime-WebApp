@@ -73,7 +73,7 @@ Screenshot 3: This screenshot is an example of using the search functionality fo
 
 ![Screenshot 3 (Search and Displaying Data)](s3.png)
 
-Screenshot 4:
+Screenshot 4: In this screenshot, I continue showing the search functionality for searching with street/neighbourhood name. I entered "Clifton" as a specific area for crime search. As you can see, there are pins on the map which shows every are that has "Clifton" keyword on it. The user can move with the mouse on any pin and it will automatically display for him the crime and the neighbouthood name. For this example, the crime is a vehicle crime near Clifton Hill and shows the exact location of this area. 
 
 ![Screenshot 4 (Crime Details)](s4.png)
 
