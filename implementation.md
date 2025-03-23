@@ -62,3 +62,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 ![Screenshot 6 (Crime Details)](s6.png)
 
+![Screenshot 7 (Crime Details)](s7.png)
+
+![Screenshot 8 (Crime Details)](s8.png)
+
