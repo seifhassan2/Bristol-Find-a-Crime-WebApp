@@ -26,6 +26,27 @@ provide a table listing the number of jslint warnings/reports for each module.
     └── styles.css
 ```
 
+
+The ISD Project (Bristol's Find a Crime) folder contains the essential files and directories for the web application. Below is an outline of the project structure and the role of key files:
+
+.vscode/ – A directory containing project-specific settings for Visual Studio Code, such as extensions and configurations.
+index.html – The homepage of the web application, providing an overview and navigation to different sections.
+styles.css – The main stylesheet for styling the home page and entire website.
+crime data.html – The main page with search functionality to display crime data, allowing users to search and filter crime incidents. (Use-case 1: Find a Crime) By Seif Hassan.
+mapstyle.css – A separate stylesheet specifically for styling interactive maps and a responsive stylesheet for crime data.html (Find a Crime Use-case).
+statistics.html – A page displaying statistical information of crime trends.
+report.html – A section where users can report incidents or provide feedback on crime-related information.
+about.html – A page that describes the purpose of the project, its features, and relevant background information.
+contact.html – A page allowing users to find contact details or submit inquiries.
+
+
+#
+
+Lint:
+
+
+
+
 ## Software Architecture
 TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
 
