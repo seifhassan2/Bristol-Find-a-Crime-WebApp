@@ -1,0 +1,124 @@
+/* Responsive find a crime style page for mapping */
+/* By Seif Hassan */
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #2a376c, #2a376c);
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 0;
+}
+
+/* Centering the form */
+.report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form Styling */
+.report form {
+    background: white;
+    padding: 65px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: -111px;
+}
+
+/* Form Title */
+h2 {
+    text-align: center;
+    color: #2a376c;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs & Textarea */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Input focus effect */
+input:focus, select:focus, textarea:focus {
+    border-color: #2a376c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 55, 108, 0.5);
+}
+
+/* Submit Button */
+button {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(to right, #0056b3, #003f7f);
+}
+
+/* Footer */
+footer {
+    background: #2a376c;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
