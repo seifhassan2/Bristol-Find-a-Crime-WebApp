@@ -123,8 +123,6 @@ Screenshots (6 & 7): The following screenshots show the same thing as previous o
 (UC2)
   In the following screenshots, I am explaining the use of "Report a Crime" page, which is a use-case page also by me, Seif Hassan, explaining in each step how the user can benefit from this page to engage with the website and notify us to keep our dataset up-to-dated by reporting a crime he witnessed by completing a small form for information gathering. The screenshots below shows how the user can use the crime reporting use-case step-by-step.
 
-
-
 #  
 
   Screenshot 0: Like the first use case, this screenshot shows the first page that the user shall navigate, which the home (index) page. This page the 3 options which are our main features. For this use-case (UC2), if the user wanted to report a crime, they should press the "Find a Crime" button, which will take them to the crime reporting page (report.html), which is my second use-case.
