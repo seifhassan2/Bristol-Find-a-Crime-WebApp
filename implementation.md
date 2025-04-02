@@ -1,7 +1,6 @@
 # Implementation
 
 ## Introduction
-TODO: Describe the system implemented (Describe the dataset. Are there any known issues? Describe any configuration data).
 
 Bristol’s Find a Crime is a web application designed to provide users with crime data in Bristol's neighbourhoods. The system retrieves crime incident data from the Open Data Bristol API (Street crime incidents dataset) and visualizes it using interactive maps powered by Leaflet.js. Users can search for crime history in specific neighborhoods and filter results by crime type.
 
@@ -10,8 +9,6 @@ The dataset used comes from Open Data Bristol, which provides structured informa
 The system requires API access to fetch crime data and a working internet connection for full functionality. Future improvements may include integrating additional data sources, enhancing filtering options, adding more dates and optimizing performance for large datasets.
 
 ## Project Structure
-TODO: Provide an outline of the project folder structure and the role of each file within it.
-provide a table listing the number of jslint warnings/reports for each module.
 
 ```
 └── 📁ISD Project (Bristol's Find a Crime)
@@ -42,12 +39,14 @@ The ISD Project (Bristol's Find a Crime) folder contains the essential files and
 - about.html – A page that describes the purpose of the project, its features, and relevant background information.
 - contact.html – A page allowing users to find contact details or submit inquiries.
 
+#
+
+### JSlint Warnings:
+
 
 #
 
 ## Software Architecture
-TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
-
 
 The component diagram illustrates the major architectural components of the Bristol’s Find a Crime web application. The system interacts with Open Data Bristol via a query for Street Crime Incidents, retrieving crime data dynamically. This data is then processed and visualized using Leaflet.js, a mapping library that enables interactive geographic representations. The interactions between components follow a service-oriented architecture, where the application fetches data from an external API and integrates it with a client-side mapping tool. Since libraries are not considered components in UML, Leaflet.js is represented as an external service that the web application interacts with rather than a self-contained component.
 
@@ -62,8 +61,6 @@ This architecture separates concerns, allowing the frontend to remain lightweigh
 ![Component Diagram](cmp.png)
 
 ## Bristol Open Data API
-TODO: Document each query to Bristol Open Data
-
 
 The class diagram represents the structure of the JSON response retrieved from the Open Data Bristol API named Street Crime Incidents, which is the dataset for crime data. The JSON class serves as the top-level container, holding multiple Feature objects, each representing a crime record. A Feature consists of an Attributes object, which stores key details such as crime id , crime category, location, date and outcome status. Additionally, each Feature includes a Geometry object containing the spatial coordinates (x and y) that define the crime location. The relationships between classes use composition, as Features, Attributes, and Geometry exist within the JSON response as nested structures. This diagram helps visualize how the data is structured and how different components are related within the API response.
 
@@ -71,8 +68,6 @@ The class diagram represents the structure of the JSON response retrieved from t
 
 
 # User guide
-TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
-
 
 #
 
