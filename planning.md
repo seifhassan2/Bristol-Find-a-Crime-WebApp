@@ -4,7 +4,7 @@
 
   
   ### Problem statement 
-#
+
 
  Residents around Bristol might be often unaware of criminal activities in their neighbourhoods, and many individuals, whether current residents or potential movers, are unaware of potential safety threats that they may face in their living areas or areas that they are going to move to. Without an easy accesible source to access clear crime information, residents will struggle to deal with crime dangers and achieving effective crime awareness.
 
@@ -17,7 +17,7 @@ Hence, a solution is needed to close this information gap and improve public saf
   #
   
 ### Business benefits 
-#
+
 
 Our high-level benefits that our web app project will provide are to:
 
@@ -36,7 +36,7 @@ Our high-level benefits that our web app project will provide are to:
 #
 
 ### Options Considered 
-#
+
   
 Several existing apps provide crime data and services similar to our proposed web app, including:
 
@@ -59,7 +59,7 @@ However, our app will be different as it mainly focuses on:
 #
  
 ### Expected Risks 
-#
+
 
 (1) Unreliable data might be used for the app and it will be perceived as unreliable itself. Meaning that the public will not have the reason nor the trust to use it. 
 
@@ -76,7 +76,6 @@ However, our app will be different as it mainly focuses on:
   #
 
 ## Project Scope 
-#
 
 Main focus: Develop a web application, "Bristol's Find a Crime," to provide detailed and user-friendly crime data for various neighborhoods in Bristol, enhancing public safety and community engagement.
 
