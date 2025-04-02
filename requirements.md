@@ -3,8 +3,6 @@
 ## User Needs
 
 ### User stories
-TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
-    Express these in the form from agile development:- As a (role) I want (goal) so that (benefit).
 
 - As an international student, I want to get to know more about Bristol’s different neighbourhoods' crime history. So that I can choose the safest place I should stay in during my studying period to avoid risks. I want to stay away from danger and feel like home during my residence in Bristol.
 
@@ -19,7 +17,6 @@ TODO: Write brief user stories to explain how various actors would interact with
 
 
 ### Actors
-TODO: List and describe the actors/users for this product.
 
 -	International students: We focus mainly on international students who come from their home countries and search for accommodation to stay in during their period of studying. They will need to be provided with information about the place/ neighbourhood they intend to go to.
 -	Second, third year students and postgraduates: they will not be in the university halls so they will need a place to stay. This tool will be helpful for safety reasons.
@@ -30,9 +27,6 @@ TODO: List and describe the actors/users for this product.
 
 
 ### Use Cases
-TODO: Describe each use case (at least one per team member).
-    Give each use case a unique ID, e.g. UC1, UC2, ...
-    Summarise these using the use-case template below.
 
 | USE-CASE ID: UC1 (By: Seif Hassan)| USE-CASE NAME: Find a Crime | 
 | -------------------------------------- | ------------------- |
@@ -45,12 +39,7 @@ TODO: Describe each use case (at least one per team member).
 | **Issues** | The student may choose a location that is out of our data set used. |
 
 
-
-TODO: Your Use-Case diagram should include all use-cases.
-
-![Use-Case Diagram Here](UC101.png)
-
-
+#
 
 
 | USE-CASE ID: UC2 (By: Seif Hassan) | USE-CASE NAME: Report a crime | 
@@ -65,7 +54,9 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 -------------------------------------------------------------------------------------------
 
-![Use-Case Diagram Here](UC102.png)
+![Use-Case Diagram Here](REQusecase.png)
+
+#
 
 | USE-CASE ID: UC3  (By:Tyler Dixon ) | USE-CASE NAME: Search filter | 
 | -------------------------------------- | ------------------- |
@@ -120,10 +111,6 @@ Non-functional 	The report must be able to function through a request
 
 ## Software Requirements Specification
 ### Functional requirements
-TODO: create a list of functional requirements. 
-e.g. "The system shall ..."
-    Give each functional requirement a unique ID. e.g. FR1, FR2, ...
-    Indicate which UC the requirement comes from.
     
 FR1: The system MUST allow users to search for specific neighborhoods in Bristol by name on a map. (Search Functionality) (UC1) <br> FR2: The system SHOULD provide filters to narrow down data by time range (e.g., last month, last year) and type of crime (e.g., theft, assault). (UC1) <br> FR3: The system MUST get the crimes data from crimes dataset used from Bristol Open Data. (UC1) <br> FR4: The system COULD provide real-time updates on ongoing crimes depending on resource limitations and data availability constraints. (UC1) <br> FR5: The system WON'T allow direct interaction with police systems or data submission due to legal and technical complexities. (UC1) (UC2) <br> FR6: The system MUST allow users to report incidents and new crimes. (UC2). <br> FR7: The system COULD update the crime data based on user reports. (UC2). <br> FR8: The system SHOULD ensure data accuracy and reliability. (UC1) (UC2). <br> FR9: 
 
@@ -148,10 +135,6 @@ FR9: The system should let the user of the consequences of giving a fabricated c
 
 
 ### Non-Functional Requirements
-TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
-Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
-
-Indicate which UC the requirement comes from.
 
 - NFR1: The system should load and display data within 3 seconds. (UC1) Performance
 - NFR2: The system could handle up to 10,000 concurrent users without performance degradation. (UC1) Performance
@@ -160,6 +143,7 @@ Indicate which UC the requirement comes from.
 - NFR5: The system must be intuitive and easy to use for all user types. (UC1, UC2) Usability
 - NFR6: The system could provide help and support features for users. (UC1, UC2) Usability
 - NFR7: The system should allow for easy integration of new data sources. (UC2) Scalability
+  #
 - NFR8: The system should comply to the laws of GDPR so that not all data is available (UC3&4) Security
 - NFR9: The system should allow significant updates without a prolonged amount of time (UC3&4) performance
 - NFR10: The system should notify the user of the said updates(UC3&4) Usability
