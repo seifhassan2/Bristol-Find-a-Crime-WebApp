@@ -1,6 +1,4 @@
-# Project Proposal 
-
-Bristol's Find a Crime 
+# Project Proposal: Bristol's Find a Crime 
 
   ## Business Case 
 
@@ -34,9 +32,6 @@ Our high-level benefits that our web app project will provide are to:
   
 
 ### Options Considered 
-
-TODO: What are some other customer options or leading products that address the same needs? 
-
   
 Several existing apps provide crime data and services similar to our proposed web app, including:
 
@@ -60,9 +55,6 @@ However, our app will be different as it mainly focuses on:
  
 ### Expected Risks 
 
-TODO: What are the main risks of this project? 
-  
-
 (1) Unreliable data might be used for the app and it will be perceived as unreliable itself. Meaning that the public will not have the reason nor the trust to use it. 
 
 (2) The level of attraction to the app will not be high enough. the lack of care or bugs will make it seem unattractive 
@@ -78,8 +70,6 @@ TODO: What are the main risks of this project?
   
 
 ## Project Scope 
-
-TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope. 
 
 Main focus: Develop a web application, "Bristol's Find a Crime," to provide detailed and user-friendly crime data for various neighborhoods in Bristol, enhancing public safety and community engagement.
 
