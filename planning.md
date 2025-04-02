@@ -110,6 +110,7 @@ Foster community engagement by allowing users to contribute to the crime data.
 
 Design the app with scalability in mind, allowing for future expansion to other cities or regions.
 
+#
   
-
+### Context Diagram:
 ![Context Diagram Here](Context.png)
