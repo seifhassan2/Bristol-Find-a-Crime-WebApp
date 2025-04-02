@@ -75,7 +75,7 @@ However, our app will be different as it mainly focuses on:
 
   #
 
-## Project Scope 
+### Project Scope 
 
 Main focus: Develop a web application, "Bristol's Find a Crime," to provide detailed and user-friendly crime data for various neighborhoods in Bristol, enhancing public safety and community engagement.
 
