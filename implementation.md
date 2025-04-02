@@ -47,9 +47,7 @@ The ISD Project (Bristol's Find a Crime) folder contains the essential files and
 | 1. [JSLint was unable to finish] Expected '{' and instead saw 'throw'. |   if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`); | 
 | 2. Use 'function (...)', not '(...) =>' when arrow functions become too complex. | document.addEventListener("DOMContentLoaded", () => { | 
 | 3. Expected 'let' and instead saw 'var'. | var map = L.map('crime-map').setView([51.4545, -2.5879], 13); | 
-| 4. Use double quotes, not single quotes. | var map = L.map('crime-map').setView([51.4545, -2.5879], 13); <br>
-                                             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { <br>
-                                              attribution: '&copy; OpenStreetMap contributors'| 
+| 4. Use double quotes, not single quotes. | var map = L.map('crime-map').setView([51.4545, -2.5879], 13); |
 
 
 
