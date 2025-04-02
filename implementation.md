@@ -45,7 +45,7 @@ The ISD Project (Bristol's Find a Crime) folder contains the essential files and
 
 
 | Description | Warning/report code | Line number |
-| -------------------------------------- | ------------------------- | ---------- |
+| -------------------------------------- | --------------------- | ---------- |
 | **1. [JSLint was unable to finish] Expected '{' and instead saw 'throw'.** | if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`); | 16:39 |
 | **2. Use 'function (...)', not '(...) =>' when arrow functions become too complex.** | document.addEventListener("DOMContentLoaded", () => { | 1:50 |
 | **3. Expected 'let' and instead saw 'var'.** | var map = L.map('crime-map').setView([51.4545, -2.5879], 13); | 6:13 |
