@@ -43,20 +43,13 @@ The ISD Project (Bristol's Find a Crime) folder contains the essential files and
 
 ### JSlint Warnings:
 
-| Description | Warning/report code |
-| 1. [JSLint was unable to finish] Expected '{' and instead saw 'throw'. |   if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`); | 
-| 2. Use 'function (...)', not '(...) =>' when arrow functions become too complex. | document.addEventListener("DOMContentLoaded", () => { | 
-| 3. Expected 'let' and instead saw 'var'. | var map = L.map('crime-map').setView([51.4545, -2.5879], 13); | 
-| 4. Use double quotes, not single quotes. | var map = L.map('crime-map').setView([51.4545, -2.5879], 13); |
-
-
 
 | Description | Warning/report code | 
 | -------------------------------------- | ------------------- |
 | **1. [JSLint was unable to finish] Expected '{' and instead saw 'throw'.** | if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`); | 
 | **2. Use 'function (...)', not '(...) =>' when arrow functions become too complex.** | document.addEventListener("DOMContentLoaded", () => { |
 | **3. Expected 'let' and instead saw 'var'.** | var map = L.map('crime-map').setView([51.4545, -2.5879], 13); |
-| **4. Use double quotes, not single quotes.** | var map = L.map('crime-map').setView([51.4545, -2.5879], 13); <br> L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { <br> attribution: '&copy; OpenStreetMap contributors' <br> |
+| **4. Use double quotes, not single quotes.** | - var map = L.map('crime-map').setView([51.4545, -2.5879], 13); <br> - L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { <br> - attribution: '&copy; OpenStreetMap contributors' <br> |
 | **Variations** | The student may choose to filter the results by a specific time range |
 | **Non-functional** | The system should load results in under 3 seconds. |
 | **Issues** | The student may choose a location that is out of our data set used. |
