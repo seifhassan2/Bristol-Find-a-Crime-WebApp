@@ -4,6 +4,7 @@
 
   
   ### Problem statement 
+#
 
  Residents around Bristol might be often unaware of criminal activities in their neighbourhoods, and many individuals, whether current residents or potential movers, are unaware of potential safety threats that they may face in their living areas or areas that they are going to move to. Without an easy accesible source to access clear crime information, residents will struggle to deal with crime dangers and achieving effective crime awareness.
 
@@ -13,8 +14,10 @@
  
 Hence, a solution is needed to close this information gap and improve public safety. Our web app aims to enhance the crime awareness of Bristol's residents by showing the crime rates in different neighbourhoods around Bristol in various forms to ensure safety for thousands of people.  
 
+  #
   
 ### Business benefits 
+#
 
 Our high-level benefits that our web app project will provide are to:
 
@@ -30,8 +33,10 @@ Our high-level benefits that our web app project will provide are to:
 
 (6) Social Impact: Raising awareness about crime contributes to social initiatives aimed at reducing crime rates. Our web app aims to reduce crime rates by 10% in high-risk areas through increased awareness and reporting.
   
+#
 
 ### Options Considered 
+#
   
 Several existing apps provide crime data and services similar to our proposed web app, including:
 
@@ -51,9 +56,10 @@ However, our app will be different as it mainly focuses on:
 
 (4) Encouraging community reporting as the user will have the option to report incidents and new crimes, fostering community engagement and providing more comprehensive data which allows us to update our dataset regularly.
  
-
+#
  
 ### Expected Risks 
+#
 
 (1) Unreliable data might be used for the app and it will be perceived as unreliable itself. Meaning that the public will not have the reason nor the trust to use it. 
 
@@ -67,9 +73,10 @@ However, our app will be different as it mainly focuses on:
 
 (6) The features of this app may or may not be available due to the experience of the developer's skill in the field. Additionally, the developer will not have financial means to develop the more advanced features. 
 
-  
+  #
 
 ## Project Scope 
+#
 
 Main focus: Develop a web application, "Bristol's Find a Crime," to provide detailed and user-friendly crime data for various neighborhoods in Bristol, enhancing public safety and community engagement.
 
