@@ -77,6 +77,7 @@ The class diagram represents the structure of the JSON response retrieved from t
 
 # User guide
 
+(UC1)
  In these screenshots, I am explaining the use of "Find a Crime" page, which is a use-case page by me, Seif Hassan, explaining in each step how the user can benefit from this page to get the crime information that he wants and to display it either on a map or in an information box. This provides the user different forms of information so that he can get the best benefit from this page. The screenshots below shows how the user can use the crime search use-case step-by-step.
 
 #
@@ -119,5 +120,37 @@ Screenshots (6 & 7): The following screenshots show the same thing as previous o
 
 #
 
+(UC2)
+  In the following screenshots, I am explaining the use of "Report a Crime" page, which is a use-case page also by me, Seif Hassan, explaining in each step how the user can benefit from this page to engage with the website and notify us to keep our dataset up-to-dated by reporting a crime he witnessed by completing a small form for information gathering. The screenshots below shows how the user can use the crime reporting use-case step-by-step.
 
+
+
+#  
+
+  Screenshot 0: Like the first use case, this screenshot shows the first page that the user shall navigate, which the home (index) page. This page the 3 options which are our main features. For this use-case (UC2), if the user wanted to report a crime, they should press the "Find a Crime" button, which will take them to the crime reporting page (report.html), which is my second use-case.
+
+![Screenshot 0 (Select report a crime from home)](sc0.png)
+
+#  
+
+  Screenshot 1: 
+![Screenshot 1 (Report a Crime)](sc1.png)
+
+#
+
+Screenshot 2: This screenshot shows the crime search "Find a Crime" page, which is mainly my use-case. This page shows for the user a search bar for crime search. They can search with street/neighbourhood name and it will display for him all the crime data that happened in this area on the map and the information box below the map. They can also search with the crime type and it will display for them all the areas where this crime type happened in. 
+
+![Screenshot 2 (Choosing crime type)](sc2.png)
+
+#
+
+Screenshot 3: This screenshot is an example of using the search functionality for searching with street/neighbourhood name. As you can see, I used "Clifton" as an example of a neighbourhood. Then I pressed the "Search" button.
+
+![Screenshot 3 (Selecting date and time)](sc3.png)
+
+#
+
+Screenshot 4: In this screenshot, I continue showing the search functionality for searching with street/neighbourhood name. I entered "Clifton" as a specific area for crime search. As you can see, there are pins on the map which shows every are that has "Clifton" keyword on it. The user can move with the mouse on any pin and it will automatically display for him the crime and the neighbouthood name. For this example, the crime is a vehicle crime near Clifton Hill and shows the exact location of this area. 
+
+![Screenshot 4 (Submit form)](sc4.png)
 
