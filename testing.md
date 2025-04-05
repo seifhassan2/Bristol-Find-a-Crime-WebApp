@@ -5,7 +5,8 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 
 | Test Case ID | Test Tyoe | Description | Scenario |
 | ---------- | -------------- | --------------- | --------- |
-|            |                |                 |           |
+| TF1.1 | UAT | User can search for crime data by neighborhood | User enters a neighborhood name in the search bar <br> System displays crime data results for the selected area |
+| TF1.2 | UAT | User can filter crime data by type | User searches for a crime type (e.g., burglary, theft) from the search bar <br> System shows results to display only that crime type |
 
 ## Test Runs - Requirements Traceability Matrix 
 For Use-cases 1 & 2 <br>
