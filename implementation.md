@@ -73,7 +73,7 @@ This architecture separates concerns, allowing the frontend to remain lightweigh
 
 ## Bristol Open Data API
 
-(Designed & Explained by Seif. For UC 1)
+(Designed & Explained by Seif for UC 1)
 
 The class diagram represents the structure of the JSON response retrieved from the Open Data Bristol API named Street Crime Incidents, which is the dataset for crime data. The JSON class serves as the top-level container, holding multiple Feature objects, each representing a crime record. A Feature consists of an Attributes object, which stores key details such as crime id , crime category, location, date and outcome status. Additionally, each Feature includes a Geometry object containing the spatial coordinates (x and y) that define the crime location. The relationships between classes use composition, as Features, Attributes, and Geometry exist within the JSON response as nested structures. This diagram helps visualize how the data is structured and how different components are related within the API response.
 
