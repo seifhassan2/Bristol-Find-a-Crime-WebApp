@@ -14,7 +14,7 @@ By: Seif Hassan
 | Use-Case ID | Requirement ID | Software module | Test Case | Status |
 | ---------- | -------------- | --------------- | --------- | ------- |
 | UC1 | FR1.1 | crime data.html | TF1.1 | PASS |
-| UC1 | FR1.2 | crime data.html | TF1.2 | FAIL |
+| UC1 | FR1.2 | crime data.html | TF1.2 | PASS |
 | UC1 | FR1.3 | crime data.html | TF1.3 | PASS |
 | UC1 | FR1.4 | crime data.html | TF1.4 | PASS |
 | UC1 | FR1.5 | crime data.html | TF1.5 | PASS |
