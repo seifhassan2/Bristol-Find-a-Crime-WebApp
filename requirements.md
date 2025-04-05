@@ -112,7 +112,7 @@ Non-functional 	The report must be able to function through a request
 ## Software Requirements Specification
 ### Functional requirements
     
-FR1: The system MUST allow users to search for specific neighborhoods in Bristol by name on a map. (Search Functionality) (UC1) <br> FR2: The system SHOULD provide filters to narrow down data by time range (e.g., last month, last year) and type of crime (e.g., theft, assault). (UC1) <br> FR3: The system MUST get the crimes data from crimes dataset used from Bristol Open Data. (UC1) <br> FR4: The system COULD provide real-time updates on ongoing crimes depending on resource limitations and data availability constraints. (UC1) <br> FR5: The system WON'T allow direct interaction with police systems or data submission due to legal and technical complexities. (UC1) (UC2) <br> FR6: The system MUST allow users to report incidents and new crimes. (UC2). <br> FR7: The system COULD update the crime data based on user reports. (UC2). <br> FR8: The system SHOULD ensure data accuracy and reliability. (UC1) (UC2). <br> 
+FR1.1: The system MUST allow users to search for specific neighborhoods in Bristol by name on a map. (Search Functionality) (UC1) <br> FR1.2: The system SHOULD provide filters to narrow down data by time range (e.g., last month, last year) and type of crime (e.g., theft, assault). (UC1) <br> FR1.3: The system MUST get the crimes data from crimes dataset used from Bristol Open Data. (UC1) <br> FR1.4: The system COULD provide real-time updates on ongoing crimes depending on resource limitations and data availability constraints. (UC1) <br> FR1.5 / FR2.1: The system WON'T allow direct interaction with police systems or data submission due to legal and technical complexities. (UC1) (UC2) <br> FR2.2: The system MUST allow users to report incidents and new crimes. (UC2). <br> FR2.3: The system COULD update the crime data based on user reports. (UC2). <br> FR1.6 / FR2.4: The system SHOULD ensure data accuracy and reliability. (UC1) (UC2). <br> 
 
 #
 
@@ -120,11 +120,10 @@ UC3&UC4
 
 Search filter
 FR1: People on the website should be able to access the need website without an issue.
-FR2: The website should get diferent types of data based on thw eAPI so that the criteria should be matched as shown by the person
+FR2: The website should get diferent types of data based on the API so that the criteria should be matched as shown by the person
 FR3:Search filters would need to return certain types of results given by the user.
 FR4: Search filters will need to filter all types of crimes if it meant no search critieria is given
-FR5: The system should make a competent effort to not fail nor glitch upon entering input
-reporting of crime
+FR5: The system should make a competent effort to not fail nor glitch upon entering input reporting of crime
 FR6: the system should be able to send false crime reports but is theoretically punished
 FR7: System should be able to allow the different admins to review the the crimes to the website's integrity
 FR8: The system should make sure the admins can verify that the app is given a signal to know that the crime is false
@@ -137,13 +136,13 @@ FR9: The system should let the user of the consequences of giving a fabricated c
 
 ### Non-Functional Requirements
 
-- NFR1: The system should load and display data within 3 seconds. (UC1) Performance
-- NFR2: The system could handle up to 10,000 concurrent users without performance degradation. (UC1) Performance
-- NFR3: The system could protect user data with encryption. (UC2) Security
-- NFR4: The system could comply with relevant data protection regulations. (UC2) Security
-- NFR5: The system must be intuitive and easy to use for all user types. (UC1, UC2) Usability
-- NFR6: The system could provide help and support features for users. (UC1, UC2) Usability
-- NFR7: The system should allow for easy integration of new data sources. (UC2) Scalability
+- NFR1.1: The system should load and display data within 3 seconds. (UC1) Performance
+- NFR1.2: The system could handle up to 10,000 concurrent users without performance degradation. (UC1) Performance
+- NFR2.1: The system could protect user data with encryption. (UC2) Security
+- NFR2.2: The system could comply with relevant data protection regulations. (UC2) Security
+- NFR1.3 / NFR2.3 : The system must be intuitive and easy to use for all user types. (UC1, UC2) Usability
+- NFR1.4 / NFR2.4: The system could provide help and support features for users. (UC1, UC2) Usability
+- NFR2.5: The system should allow for easy integration of new data sources. (UC2) Scalability
   #
 - NFR8: The system should comply to the laws of GDPR so that not all data is available (UC3&4) Security
 - NFR9: The system should allow significant updates without a prolonged amount of time (UC3&4) performance
@@ -152,7 +151,7 @@ FR9: The system should let the user of the consequences of giving a fabricated c
 - NFR12: The system needs to rejects any malicious hacking techniques such as SQL injection and CSRF attacks etc.(UC3)
 - NFR13: Any data entered needs to be encrypted from all users(UC4) security
 - NFR14: The must be easy to look at and easy to navigate; straight forward for anyone to use(UC3&4) Usability
-- 
+  
 
 
 
