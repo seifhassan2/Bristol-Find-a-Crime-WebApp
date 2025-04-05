@@ -3,10 +3,13 @@
 ## Test Plan
 TODO: Describe any manual and automated (unit) tests. Uniquely identify each test case. Include prerequisites and test data.
 
-Test Runs
-TODO: For each test described above, indicate the current status. 
-Create a requirements traceability matrix to validate the completeness of the product.
+| Test Case ID | Test Tyoe | Description | Scenario |
+| ---------- | -------------- | --------------- | --------- |
+|            |                |                 |           |
 
+## Test Runs - Requirements Traceability Matrix 
+For Use-cases 1 & 2 <br>
+By: Seif Hassan
 
 | Use-Case ID | Requirement ID | Software module | Test Case | Status |
 | ---------- | -------------- | --------------- | --------- | ------- |
@@ -20,9 +23,13 @@ Create a requirements traceability matrix to validate the completeness of the pr
 | UC2 | FR2.2 | report.html | TF2.2 | PASS |
 | UC2 | FR2.3 | report.html | TF2.3 | FAIL |
 | UC2 | FR2.4 | report.html | TF2.4 | FAIL |
-| UC1 | NFR1.1 | crime data.html | TNF1.1 | PASS |
-| UC1 | NFR1.2 | crime data.html | TNF1.1 | PASS |
-| UC1 | NFR1.3 | crime data.html | TNF1.1 | PASS |
-| UC1 | NFR1.4 | crime data.html | TNF1.1 | PASS |
+| UC1 | NFR1.1 | report.html | TNF1.1 | PASS |
+| UC1 | NFR1.2 | report.html | TNF1.2 | FAIL |
+| UC1 | NFR1.3 | report.html | TNF1.3 | PASS |
+| UC1 | NFR1.4 | report.html | TNF1.4 | PASS |
+| UC2 | NFR2.1 | report.html | TNF2.1 | PASS |
+| UC2 | NFR2.2 | report.html | TNF2.2 | PASS |
+| UC2 | NFR2.3 | report.html | TNF2.3 | PASS |
+| UC2 | NFR2.4 | report.html | TNF2.4 | PASS |
+| UC2 | NFR2.5 | report.html | TNF2.5 | FAIL |
 
-TODO: Add rows for each test, current status is eg. pass/fail
