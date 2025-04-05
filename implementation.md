@@ -43,6 +43,7 @@ The ISD Project (Bristol's Find a Crime) folder contains the essential files and
 
 ### JSlint Warnings:
 
+N.B: These JS warnings are for the UC1 javascript in the crime data.html (By Seif)
 
 | Description | Warning/report code | Line number |
 | -------------------------------------- | --------------------- | ---------- |
@@ -55,6 +56,8 @@ The ISD Project (Bristol's Find a Crime) folder contains the essential files and
 #
 
 ## Software Architecture
+
+(Designed & Explained by Seif.)
 
 The component diagram illustrates the major architectural components of the Bristol’s Find a Crime web application. The system interacts with Open Data Bristol via a query for Street Crime Incidents, retrieving crime data dynamically. This data is then processed and visualized using Leaflet.js, a mapping library that enables interactive geographic representations. The interactions between components follow a service-oriented architecture, where the application fetches data from an external API and integrates it with a client-side mapping tool. Since libraries are not considered components in UML, Leaflet.js is represented as an external service that the web application interacts with rather than a self-contained component.
 
@@ -69,6 +72,8 @@ This architecture separates concerns, allowing the frontend to remain lightweigh
 ![Component Diagram](cmp.png)
 
 ## Bristol Open Data API
+
+(Designed & Explained by Seif. For UC 1)
 
 The class diagram represents the structure of the JSON response retrieved from the Open Data Bristol API named Street Crime Incidents, which is the dataset for crime data. The JSON class serves as the top-level container, holding multiple Feature objects, each representing a crime record. A Feature consists of an Attributes object, which stores key details such as crime id , crime category, location, date and outcome status. Additionally, each Feature includes a Geometry object containing the spatial coordinates (x and y) that define the crime location. The relationships between classes use composition, as Features, Attributes, and Geometry exist within the JSON response as nested structures. This diagram helps visualize how the data is structured and how different components are related within the API response.
 
@@ -125,30 +130,31 @@ Screenshots (6 & 7): The following screenshots show the same thing as previous o
 
 #  
 
-  Screenshot 0: Like the first use case, this screenshot shows the first page that the user shall navigate, which the home (index) page. This page the 3 options which are our main features. For this use-case (UC2), if the user wanted to report a crime, they should press the "Find a Crime" button, which will take them to the crime reporting page (report.html), which is my second use-case.
+  Screenshot 0: Like the first use-case, this screenshot shows the first page that the user shall navigate, which the home (index) page. This page the 3 options which are our main features. For this use-case (UC2), if the user wanted to report a crime, they should press the "Find a Crime" button, which will take them to the crime reporting page (report.html), which is my second use-case.
 
 ![Screenshot 0 (Select report a crime from home)](sc0.png)
 
 #  
 
-  Screenshot 1: 
+  Screenshot 1: This screenshot shows the Crime Reporting page. It has a simple form that the user should fill when they want to report a crime. The form has 6 sections to be filled. First is the Crime type. Second is the other section which is related to the "Other" option in the dropdown to allow the user to elaborate the crime time. Third is the Date & Time section. Fourth is the Location section. Fifth is the Description. Sixth is for uploading images as an evidence for the crime. In the screenshots below, I am explaining each section with giving examples in each section as a user guide.
+  
 ![Screenshot 1 (Report a Crime)](sc1.png)
 
 #
 
-Screenshot 2: This screenshot shows the crime search "Find a Crime" page, which is mainly my use-case. This page shows for the user a search bar for crime search. They can search with street/neighbourhood name and it will display for him all the crime data that happened in this area on the map and the information box below the map. They can also search with the crime type and it will display for them all the areas where this crime type happened in. 
+Screenshot 2: This screenshot shows the Crime Type section which has dropdown that contains a list of crime types and "Other" option if the user wants to tell about different type.
 
 ![Screenshot 2 (Choosing crime type)](sc2.png)
 
 #
 
-Screenshot 3: This screenshot is an example of using the search functionality for searching with street/neighbourhood name. As you can see, I used "Clifton" as an example of a neighbourhood. Then I pressed the "Search" button.
+Screenshot 3: This screenshot is an example of using the the Date & Time section which has a calender to allow the user choosing the exact date and time of the crime.
 
 ![Screenshot 3 (Selecting date and time)](sc3.png)
 
 #
 
-Screenshot 4: In this screenshot, I continue showing the search functionality for searching with street/neighbourhood name. I entered "Clifton" as a specific area for crime search. As you can see, there are pins on the map which shows every are that has "Clifton" keyword on it. The user can move with the mouse on any pin and it will automatically display for him the crime and the neighbouthood name. For this example, the crime is a vehicle crime near Clifton Hill and shows the exact location of this area. 
+Screenshot 4: This screenshot shows the Location section that allows the user to enter the neighbourhood name, street name or postcode. Then the Description, which allows the user to elaborate more details of the crime, and final section is for uploading images as an evidence for the crime, which is an otional thing.
 
 ![Screenshot 4 (Submit form)](sc4.png)
 
