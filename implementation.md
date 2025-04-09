@@ -154,7 +154,7 @@ Screenshot 3: This screenshot is an example of using the the Date & Time section
 
 #
 
-Screenshot 4: This screenshot shows the Location section that allows the user to enter the neighbourhood name, street name or postcode. Then the Description, which allows the user to elaborate more details of the crime, and final section is for uploading images as an evidence for the crime, which is an otional thing.
+Screenshot 4: This screenshot shows the Location section that allows the user to enter the neighbourhood name, street name or postcode. Then the Description, which allows the user to elaborate more details of the crime, and final section is for uploading images as an evidence for the crime, which is an otional thing. Then, the user clicks 'Submit' after filling the form successfully.
 
 ![Screenshot 4 (Submit form)](sc4.png)
 
