@@ -35,7 +35,7 @@ The ISD Project (Bristol's Find a Crime) folder contains the essential files and
 - mapstyle.css – A separate stylesheet specifically for styling interactive maps and a responsive stylesheet for crime data.html (Find a Crime Use-case).
 - statistics.html – A page displaying statistical information of crime trends.
 - report.html – A section where users can report incidents or provide feedback on crime-related information. (Use-case 2: Report a Crime) By Seif Hassan.
-- reportstyle.css - A separate stylesheet specifically for styking the reporting form and a responsive stylesheet for report.html (Report a Crime Use-case).
+- reportstyle.css - A separate stylesheet specifically for styling the reporting form and a responsive stylesheet for report.html (Report a Crime Use-case).
 - about.html – A page that describes the purpose of the project, its features, and relevant background information.
 - contact.html – A page allowing users to find contact details or submit inquiries.
 
