@@ -1,7 +1,8 @@
 # Testing
 
 ## Test Plan
-TODO: Describe any manual and automated (unit) tests. Uniquely identify each test case. Include prerequisites and test data.
+For Use-cases 1 & 2 <br>
+By: Seif Hassan
 
 | Test Case ID | Test Tyoe | Description | Scenario |
 | ---------- | -------------- | --------------- | --------- |
@@ -12,15 +13,10 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 | TF2.2 | UAT | User can upload media with a report | User attaches a photo of the incident when reporting <br> System uploads and links it to the report |
 | TNF1.1 | UAT | Load time for crime data under 3 seconds | User visits find a crime page <br> Crime info loads in < 3 seconds |
 | TNF1.3 | UAT | Interface should be intuitive for new users | First-time user navigates both pages <br> Finds key features easily, without needing instructions |
+| TNF2.3 | UAT | System should be user-friendly | Users complete core actions with minimal clicks <br> Form and map are responsive |
+| TNF2.4 | UAT | Optional support feature provided | User finds an email for reporting bugs or help |
 
-
-
-
-
-
-
-
-
+#
 
 ## Test Runs - Requirements Traceability Matrix 
 For Use-cases 1 & 2 <br>
