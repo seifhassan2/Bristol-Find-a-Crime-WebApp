@@ -7,6 +7,20 @@ TODO: Describe any manual and automated (unit) tests. Uniquely identify each tes
 | ---------- | -------------- | --------------- | --------- |
 | TF1.1 | UAT | User can search for crime data by neighborhood | User enters a neighborhood name in the search bar <br> System displays crime data results for the selected area |
 | TF1.2 | UAT | User can filter crime data by type | User searches for a crime type (e.g., burglary, theft) from the search bar <br> System shows results to display only that crime type |
+| TF1.3 | UAT | User can load data from Bristol Open Data dataset | System fetches JSON data from the Bristol Open Data API <br> Crime info is displayed on the map and in tables |
+| TF2.1 | UAT | User can submit new crime report via form | User fills and submits a report on the report a crime page <br> Confirmation message shown after submitting the form |
+| TF2.2 | UAT | User can upload media with a report | User attaches a photo of the incident when reporting <br> System uploads and links it to the report |
+| TNF1.1 | UAT | Load time for crime data under 3 seconds | User visits find a crime page <br> Crime info loads in < 3 seconds |
+| TNF1.3 | UAT | Interface should be intuitive for new users | First-time user navigates both pages <br> Finds key features easily, without needing instructions |
+
+
+
+
+
+
+
+
+
 
 ## Test Runs - Requirements Traceability Matrix 
 For Use-cases 1 & 2 <br>
