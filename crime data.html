@@ -1,155 +1,165 @@
-<!--Tyler-->
+<!-- Use-case 1: Find a Crime -->
+<!-- Responsive css file for this page: mapstyle.css -->
+<!-- By: Seif Hassan -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criminal Statistics</title>
+    <title>Find a Crime</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mapstyle.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lobster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>  <!-- Load Leaflet at the top -->
 </head>
 
+<body>
 
+    <header> 
+        <h1>Bristol's Find a Crime</h1>
+        <p>Explore the history of crimes in Bristol's neighbourhoods.</p>
+        <a href="index.html" class="home-button">Home</a>
+    </header>
 
+    <main class="mapping">
+        <section>
+            <h2>Find a Crime <i class="fa-solid fa-magnifying-glass"></i></h2>
+            <!-- Search Bar -->
+            <input type="text" id="search-input" placeholder="Search by street name or crime type">
+            <button id="search-button">Search</button>
+        </section>
 
-<header>
-
-    <h1>Bristol's Find a Crime</h1>
-    <p>Explore the history of crimes in Bristol's neighbourhoods.</p>
-    <a href="index.html" class="home-button">Home</a> <!-- Home Button -->
-
-</header>
-
-<main>
-    Preview Criminal Statistics
-    <table id="#crimeTable">
-
-        <body class=" p-6 grey-100">
-            <div class="max-w-4x1 mx-auto bg-white p-4 shadow-md rounded">
-                <input type="text" id="searchFilter" placeholder="Search by Crime Category... "
-                    class="border p-2 mb-4 w-full">
-                <button id="sortIncrease" class="px-4 py-2 bg-blue-500 text-white rounded"
-                    onclick="sortTable('increase')"> Increase Order</button>
-                <button id="sortDecrease" class="px-4 py-2 bg-blue-500 text-white rounded"
-                    onclick="sortTable('decrease')"> Decrease Order</button>
-                <button id="searchResult" class="px-4 py-2 bg-green-500 text-white rounded">Search</button>
-
-                <table id="#crimeTable" class="w-full border-collapse border border-grey-300">
-                    <thead>
-                        <tr class="bg-grey-200">
-                            <th class="border p-2 cursor-pointer" onclick="sortTable(0)"> MONTH</th>
-                            <th class="border p-2 cursor-pointer" onclick="sortTable(1)"> CRIME CATEGORY</th>
-                            <th class="border p-2 cursor-pointer" onclick="sortTable(2)"> STREET</th>
-                            <th class="border p-2 cursor-pointer" onclick="sortTable(3)"> LOCATION TYPE</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
+        <section class="map-section">
+            <div id="map-container">
+                <div id="crime-map" style="height: 500px;"></div> <!-- Map Container -->
             </div>
-            <script>
-                async function fetchData() {
+        </section>
+
+        <section class="results-section">
+            <h2>Crime Details</h2>
+            <div id="crime-results"></div>  <!-- Crime List -->
+            <div id="crime-list"></div>     <!-- Crime Data List -->
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bristol's Find a Crime. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <span class="separator">|</span>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </footer>
+
+    <script>
+
         
-                    const url = "https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_community_and_safety/MapServer/24/query?where=1%3D1&outFields=MONTH,LOCATION_TYPE,STREET_NAME,CRIME_CATEGORY&outSR=4326&f=json"
-        
-                    try {
-                        const response = await fetch(url);
-                        const data = await response.json();
-                        const tableBody = document.querySelector('#crimeTable tbody');
-                        tableBody.innerHTML = '';
-                        const crimes = data.features;
-        
-                        crimes.forEach(crime => {
-                            const row = document.createElement("tr");
-                            row.innerHTML = `
-                                <td>${crime.attributes.MONTH}</td> 
-                                <td>${crime.attributes.CRIME_CATEGORY}</td>
-                                <td>${crime.attributes.STREET_NAME}</td>
-                                <td>${crime.attributes.LOCATION_TYPE}</td>    
-                            `;
-                            tableBody.appendChild(row);
-                        });
-        
-        
-                    } catch (error) {
-                        console.error("Error fetching data");
-                        alert("Can't fetch data from the API");
-        
-                    }
+        document.addEventListener("DOMContentLoaded", () => {
+            const API_URL = "https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_community_and_safety/MapServer/24/query?where=1%3D1&outFields=MONTH,CRIME_CATEGORY,LONGITUDE,LATITUDE,STREET_NAME&outSR=4326&f=json";
+            let crimeData = [];
+    
+            // Initialize the Map (Set to Bristol's Coordinates)
+            var map = L.map('crime-map').setView([51.4545, -2.5879], 13);
+    
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+    
+            // Fetch Crime Data (But Don't Display it Automatically)
+            async function fetchCrimeData() {
+                try {
+                    const response = await fetch(API_URL);
+                    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+    
+                    const data = await response.json();
+                    crimeData = data.features;
+                    // Do NOT display crime data here (Just store it)
+                } catch (error) {
+                    console.error("Error fetching crime data:", error);
                 }
-        
-        
-        
-                let isDescending = false;
-        
-                function sortTable(order) {
-                    const table = document.getElementById("crimeTable");
-                    const rows = Array.from(table.querySelectorAll("tbody tr"));
-                    let columnIndex = 1;
-        
-                    if (order === "increase") {
-                        isDescending = false;
-                    } else if (order === "decrease") {
-                        isDescending = true;
-                    }
+            }
+    
+            // Display Crime Data as List (Only When Search is Triggered)
+            function displayCrimeData(data) {
+                const crimeList = document.getElementById("crime-list");
+                crimeList.innerHTML = ""; // Clear previous results
+    
+                if (data.length === 0) {
+                    crimeList.innerHTML = "<p>No crimes found.</p>";
+                    return;
                 }
-        
-                rows.sort((a, b) => {
-                    const cellA = a.cells[columnIndex].innerText;
-                    const cellB = b.cells[columnIndex].innerText;
-                    const aValue = isNaN(cellA) ? cellA.toLowerCase() : parseFloat(cellA);
-                    const bValue = isNaN(cellB) ? cellB.toLowerCase() : parseFloat(cellB);
-                    return isDescending ? (bValue > aValue ? 1 : -1) : (aValue > bValue ? 1 : -1);
+    
+                data.forEach(crime => {
+                    const { MONTH, CRIME_CATEGORY, LONGITUDE, LATITUDE, STREET_NAME } = crime.attributes;
+    
+                    const crimeItem = document.createElement("div");
+                    crimeItem.classList.add("crime-item");
+                    crimeItem.innerHTML = `
+                        <p><strong>Crime:</strong> ${CRIME_CATEGORY}</p>
+                        <p><strong>Street:</strong> ${STREET_NAME}</p>
+                        <p><strong>Month:</strong> ${MONTH}</p>
+                        <p><strong>Location:</strong> (${LATITUDE}, ${LONGITUDE})</p>
+                        <hr>
+                    `;
+    
+                    crimeList.appendChild(crimeItem);
                 });
-        
-                const tbody = table.querySelector("tbody");
-                tbody.innerHTML = '';
-                tbody.append(...rows);
-                       
-                
-       
-                function setupSorting() {
-                    const headers = document.querySelectorAll("#crimeTable th");
-                    headers.forEach((header, index) => {
-                        header.addEventListener("click", () => sortTable(index));
-        
-                    });
-        
-                }
-        
-                document.getElementById("searchResult").addEventListener("click", function () {
-                    let filterValue = document.getElementById("searchFilter").value.toLowerCase();
-                    const rows = document.querySelectorAll("#crimeTable tbody tr");
-        
-                    rows.forEach(row => {
-                        const crimeCategory = row.cells[1].innerText.toLowerCase();
-                        row.style.display = crimeCategory.includes(filterValue) ? '' : "none";
-        
-        
-                    });
-        
+            }
+    
+            // Filter Crime Data based on Search
+            function filterCrimeData() {
+                const searchInput = document.getElementById("search-input").value.toLowerCase();
+                const filteredData = crimeData.filter(crime => {
+                    const street = crime.attributes.STREET_NAME.toLowerCase();
+                    const crimeType = crime.attributes.CRIME_CATEGORY.toLowerCase();
+                    return street.includes(searchInput) || crimeType.includes(searchInput);
                 });
+    
+                displayCrimeData(filteredData);
+                plotCrimeOnMap(filteredData); // Update map markers
+            }
+    
+            // Attach Event Listener to Search Button
+            document.getElementById("search-button").addEventListener("click", filterCrimeData);
+    
+            // Function to Plot Crimes on the Map (Only on Search)
+            function plotCrimeOnMap(data) {
+                map.eachLayer(layer => {  // Remove existing markers before adding new ones
+                    if (layer instanceof L.Marker) {
+                        map.removeLayer(layer);
+                    }
+                });
+    
+                data.forEach(crime => {
+                    let lat = crime.attributes.LATITUDE;
+                    let lon = crime.attributes.LONGITUDE;
+                    let crimeType = crime.attributes.CRIME_CATEGORY;
+                    let street = crime.attributes.STREET_NAME;
+    
+                    if (lat && lon) {
+                        L.marker([lat, lon]).addTo(map)
+                            .bindPopup(`<strong>Crime:</strong> ${crimeType}<br><strong>Street:</strong> ${street}`);
+                    }
+                });
+            }
+    
+            fetchCrimeData(); // Fetch Data but DO NOT Display it until Search is Triggered
+        });
+
         
-                window.onload = () => {
-                    fetchData().then(setupSorting);
-                };
-        
-            </script>
-        </body>
-</main>
 
 
-<footer>
-    <p>&copy; 2025 Bristol's Find a Crime. All rights reserved.</p>
-    <div class="footer-links">
-        <a href="about.html">About</a> <!--Link to the About Page-->
-        <span class="separator">|</span> <!-- Separator -->
-        <a href="contact.html">Contact Us</a>
-    </div>
-
-   
-
-</footer>
+    </script>
+    
 
 </body>
-
 </html>
