@@ -33,7 +33,7 @@
 | **Description** | A student trying to search for the crime history of the area that he intends to move to in Bristol during his university studies 
 | **Actors** | International/UK Home Student |
 | **Assumptions** | Pre-condition: Internet access available and basic knowledge of how to use a web application. <br> Post-condition: The student identifies the neighborhood based on the provided crime data. |
-| **Steps** | 1- User Action: The student navigates to the website's home page. <br> 2- The student presses the Find a Crime button 3- The system displays a search bar and an interactive map of Bristol. <br> 4- The student enters the name of a neighborhood, street or crime type. <br> 5- The system displays on the the crimes that happened in the chosen area <br> 6- The student reviews the data to assess whether his chosen neighborhood is safe for residence or not. |
+| **Steps** | 1- User Action: The student navigates to the website's home page. <br> 2- The student presses the Find a Crime button <br> 3- The system displays a search bar and an interactive map of Bristol. <br> 4- The student enters the name of a neighborhood, street or crime type. <br> 5- The system displays on the the crimes that happened in the chosen area <br> 6- The student reviews the data to assess whether his chosen neighborhood is safe for residence or not. |
 | **Variations** | The student may choose to filter the results by a specific time range |
 | **Non-functional** | The system should load results in under 3 seconds. |
 | **Issues** | The student may choose a location that is out of our data set used. |
